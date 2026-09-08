@@ -65,6 +65,4 @@ scale), and a `results` map keyed by pair id:
 ```
 
 `outcome` is `correct` · `incorrect` (a wrong definite verdict) · `unknown` (the
-procedure declined, a valid answer on the open fragment) · `error`. Pair
-metadata (operator, side, semantics) lives in `data/*/index.json`, joined on the
-id.
+procedure declined, a valid answer on the open fragment) · `error`.
