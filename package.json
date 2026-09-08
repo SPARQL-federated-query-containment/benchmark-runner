@@ -1,0 +1,25 @@
+{
+  "name": "benchmark-runner",
+  "module": "src/run.ts",
+  "type": "module",
+  "private": true,
+  "workspaces": ["solver"],
+  "scripts": {
+    "image": "docker build -t specs solver/specs",
+    "bench": "bun src/run.ts",
+    "smoke": "bun src/run.ts -r 1",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "result-interface": "^2.3.3",
+    "solver": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

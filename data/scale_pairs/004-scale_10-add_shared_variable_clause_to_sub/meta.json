@@ -1,0 +1,13 @@
+{
+  "id": "004-scale_10-add_shared_variable_clause_to_sub",
+  "query": "scale_10",
+  "operator": "add_shared_variable_clause_to_sub",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

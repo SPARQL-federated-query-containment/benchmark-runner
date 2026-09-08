@@ -1,0 +1,6 @@
+SELECT ?x WHERE {
+  SERVICE <http://example.org/a> {
+    ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.lehigh.edu//univ-bench.owl#Student> .
+    ?x <http://www.lehigh.edu//univ-bench.owl#advisor> <http://www.lehigh.edu//univ-bench.owl#Faculty0> .
+  }
+}

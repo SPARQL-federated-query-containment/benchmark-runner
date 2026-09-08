@@ -1,0 +1,13 @@
+{
+  "id": "056-scale_1000-bind_local_variable",
+  "query": "scale_1000",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

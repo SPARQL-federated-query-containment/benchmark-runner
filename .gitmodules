@@ -1,0 +1,3 @@
+[submodule "solver"]
+	path = solver
+	url = https://github.com/SPARQL-federated-query-containment/solver.git

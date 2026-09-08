@@ -1,0 +1,32 @@
+SELECT ?v0 ?end WHERE {
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#p0> ?pad .
+  }
+  SERVICE <http://example.org/b> {
+    ?v1 <http://example.org/benchmark#p1> ?v2 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v2 <http://example.org/benchmark#p2> ?v3 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v3 <http://example.org/benchmark#p3> ?v4 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v4 <http://example.org/benchmark#p4> ?v5 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v5 <http://example.org/benchmark#p5> ?v6 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v6 <http://example.org/benchmark#p6> ?v7 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v7 <http://example.org/benchmark#p7> ?v8 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v8 <http://example.org/benchmark#p8> ?v9 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v9 <http://example.org/benchmark#p9> ?end .
+  }
+}

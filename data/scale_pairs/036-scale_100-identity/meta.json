@@ -1,0 +1,13 @@
+{
+  "id": "036-scale_100-identity",
+  "query": "scale_100",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

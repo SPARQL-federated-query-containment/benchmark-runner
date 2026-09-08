@@ -1,0 +1,13 @@
+{
+  "id": "018-service_S2-rename_member",
+  "query": "service_S2",
+  "operator": "rename_member",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

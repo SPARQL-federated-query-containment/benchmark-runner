@@ -1,0 +1,13 @@
+{
+  "id": "006-service_S2-bind_local_variable",
+  "query": "service_S2",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

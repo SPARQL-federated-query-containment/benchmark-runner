@@ -1,0 +1,13 @@
+{
+  "id": "004-auto_qc_nop_Q0a-add_shared_variable_clause_to_sub",
+  "query": "auto_qc_nop_Q0a",
+  "operator": "add_shared_variable_clause_to_sub",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

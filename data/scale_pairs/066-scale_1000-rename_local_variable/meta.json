@@ -1,0 +1,13 @@
+{
+  "id": "066-scale_1000-rename_local_variable",
+  "query": "scale_1000",
+  "operator": "rename_local_variable",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

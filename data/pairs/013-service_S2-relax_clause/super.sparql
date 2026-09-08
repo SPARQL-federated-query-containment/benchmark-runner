@@ -1,0 +1,9 @@
+SELECT ?party ?page WHERE {
+  SERVICE <http://dbpedia-subset.system.ip.address:8891/sparql> {
+    ?politician <http://dbpedia.org/ontology/party> ?party .
+  }
+  SERVICE <http://newyork-times.system.ip.address:8897/sparql> {
+    ?x <http://data.nytimes.com/elements/topicPage> ?page .
+    ?x <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Barack_Obama> .
+  }
+}

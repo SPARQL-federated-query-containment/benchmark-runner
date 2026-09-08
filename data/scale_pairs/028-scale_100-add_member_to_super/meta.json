@@ -1,0 +1,13 @@
+{
+  "id": "028-scale_100-add_member_to_super",
+  "query": "scale_100",
+  "operator": "add_member_to_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

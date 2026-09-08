@@ -1,0 +1,32 @@
+SELECT ?p WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?p <http://www1.example.org/maidenName> "Smith"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?p <http://www1.example.org/maidenName> "Smith"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?p <http://www1.example.org/maidenName> "Smith"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?p <http://www1.example.org/nickname> "Yes"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?p <http://www1.example.org/nickname> "Yes"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?p <http://www1.example.org/nickname> "Yes"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "035-scale_100-drop_variable_from_super",
+  "query": "scale_100",
+  "operator": "drop_variable_from_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

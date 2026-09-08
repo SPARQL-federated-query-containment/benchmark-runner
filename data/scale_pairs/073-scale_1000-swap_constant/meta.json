@@ -1,0 +1,13 @@
+{
+  "id": "073-scale_1000-swap_constant",
+  "query": "scale_1000",
+  "operator": "swap_constant",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

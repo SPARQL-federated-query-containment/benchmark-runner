@@ -1,0 +1,13 @@
+{
+  "id": "033-scale_100-drop_head_variable",
+  "query": "scale_100",
+  "operator": "drop_head_variable",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

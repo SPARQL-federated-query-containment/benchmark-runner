@@ -1,0 +1,13 @@
+{
+  "id": "015-service_S2-rename_local_variable",
+  "query": "service_S2",
+  "operator": "rename_local_variable",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}
