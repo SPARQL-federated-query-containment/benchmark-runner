@@ -1,0 +1,14 @@
+{
+  "id": "006-service_S11-rename_local_variable",
+  "suite": "star",
+  "query": "service_S11",
+  "operator": "rename_local_variable",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

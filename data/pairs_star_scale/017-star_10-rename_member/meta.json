@@ -1,0 +1,14 @@
+{
+  "id": "017-star_10-rename_member",
+  "suite": "star",
+  "query": "star_10",
+  "operator": "rename_member",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

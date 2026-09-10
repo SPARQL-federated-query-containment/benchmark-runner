@@ -1,0 +1,42 @@
+SELECT ?x ?y ?z ?r WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.example.org/subOrganizationOf> ?y .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.example.org/subOrganizationOf> ?y .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?y <http://www.example.org/subOrganizationOf> ?z .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?y <http://www.example.org/subOrganizationOf> ?z .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?z <http://www.example.org/subOrganizationOf> ?r .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?z <http://www.example.org/subOrganizationOf> ?r .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?r <http://www.example.org/subOrganizationOf> <http://www.example.org/Unibz> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?r <http://www.example.org/subOrganizationOf> <http://www.example.org/Unibz> .
+    }
+  }
+}

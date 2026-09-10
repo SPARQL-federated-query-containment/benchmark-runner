@@ -1,0 +1,38 @@
+{
+  "id": "024-ucfq_5-bind_local_variable",
+  "suite": "ucfq",
+  "query": "ucfq_5",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/benchmark/m0",
+      "http://example.org/benchmark/m1",
+      "http://example.org/benchmark/m2",
+      "http://example.org/benchmark/m3",
+      "http://example.org/benchmark/m4",
+      "http://example.org/benchmark/m5",
+      "http://example.org/benchmark/m6",
+      "http://example.org/benchmark/m7",
+      "http://example.org/benchmark/m8",
+      "http://example.org/benchmark/m9"
+    ]
+  },
+  "super": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/benchmark/m0",
+      "http://example.org/benchmark/m1",
+      "http://example.org/benchmark/m2",
+      "http://example.org/benchmark/m3",
+      "http://example.org/benchmark/m4",
+      "http://example.org/benchmark/m5",
+      "http://example.org/benchmark/m6",
+      "http://example.org/benchmark/m7",
+      "http://example.org/benchmark/m8",
+      "http://example.org/benchmark/m9"
+    ]
+  }
+}

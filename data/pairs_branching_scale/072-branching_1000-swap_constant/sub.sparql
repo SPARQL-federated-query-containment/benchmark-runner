@@ -1,0 +1,3003 @@
+SELECT ?v0 ?end WHERE {
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?end .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v1 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v2 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v3 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v4 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v5 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v6 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v7 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v8 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v9 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v10 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v11 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v12 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v13 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v14 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v15 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v16 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v17 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v18 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v19 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v20 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v21 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v22 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v23 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v24 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v25 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v26 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v27 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v28 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v29 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v30 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v31 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v32 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v33 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v34 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v35 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v36 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v37 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v38 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v39 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v40 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v41 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v42 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v43 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v44 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v45 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v46 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v47 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v48 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v49 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v50 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v51 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v52 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v53 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v54 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v55 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v56 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v57 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v58 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v59 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v60 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v61 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v62 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v63 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v64 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v65 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v66 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v67 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v68 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v69 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v70 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v71 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v72 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v73 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v74 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v75 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v76 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v77 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v78 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v79 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v80 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v81 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v82 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v83 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v84 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v85 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v86 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v87 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v88 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v89 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v90 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v91 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v92 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v93 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v94 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v95 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v96 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v97 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v98 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v99 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v100 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v101 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v102 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v103 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v104 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v105 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v106 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v107 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v108 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v109 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v110 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v111 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v112 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v113 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v114 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v115 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v116 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v117 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v118 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v119 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v120 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v121 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v122 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v123 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v124 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v125 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v126 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v127 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v128 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v129 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v130 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v131 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v132 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v133 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v134 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v135 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v136 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v137 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v138 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v139 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v140 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v141 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v142 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v143 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v144 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v145 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v146 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v147 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v148 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v149 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v150 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v151 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v152 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v153 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v154 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v155 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v156 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v157 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v158 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v159 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v160 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v161 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v162 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v163 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v164 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v165 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v166 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v167 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v168 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v169 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v170 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v171 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v172 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v173 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v174 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v175 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v176 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v177 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v178 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v179 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v180 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v181 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v182 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v183 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v184 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v185 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v186 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v187 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v188 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v189 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v190 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v191 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v192 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v193 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v194 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v195 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v196 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v197 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v198 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v199 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v200 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v201 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v202 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v203 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v204 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v205 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v206 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v207 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v208 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v209 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v210 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v211 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v212 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v213 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v214 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v215 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v216 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v217 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v218 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v219 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v220 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v221 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v222 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v223 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v224 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v225 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v226 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v227 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v228 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v229 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v230 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v231 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v232 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v233 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v234 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v235 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v236 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v237 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v238 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v239 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v240 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v241 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v242 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v243 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v244 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v245 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v246 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v247 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v248 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v249 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v250 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v251 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v252 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v253 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v254 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v255 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v256 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v257 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v258 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v259 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v260 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v261 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v262 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v263 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v264 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v265 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v266 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v267 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v268 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v269 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v270 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v271 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v272 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v273 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v274 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v275 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v276 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v277 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v278 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v279 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v280 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v281 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v282 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v283 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v284 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v285 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v286 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v287 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v288 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v289 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v290 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v291 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v292 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v293 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v294 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v295 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v296 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v297 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v298 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v299 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v300 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v301 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v302 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v303 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v304 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v305 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v306 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v307 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v308 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v309 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v310 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v311 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v312 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v313 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v314 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v315 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v316 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v317 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v318 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v319 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v320 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v321 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v322 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v323 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v324 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v325 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v326 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v327 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v328 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v329 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v330 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v331 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v332 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v333 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v334 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v335 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v336 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v337 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v338 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v339 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v340 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v341 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v342 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v343 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v344 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v345 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v346 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v347 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v348 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v349 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v350 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v351 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v352 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v353 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v354 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v355 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v356 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v357 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v358 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v359 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v360 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v361 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v362 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v363 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v364 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v365 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v366 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v367 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v368 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v369 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v370 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v371 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v372 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v373 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v374 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v375 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v376 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v377 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v378 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v379 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v380 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v381 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v382 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v383 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v384 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v385 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v386 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v387 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v388 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v389 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v390 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v391 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v392 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v393 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v394 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v395 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v396 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v397 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v398 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v399 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v400 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v401 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v402 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v403 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v404 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v405 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v406 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v407 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v408 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v409 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v410 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v411 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v412 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v413 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v414 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v415 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v416 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v417 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v418 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v419 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v420 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v421 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v422 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v423 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v424 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v425 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v426 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v427 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v428 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v429 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v430 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v431 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v432 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v433 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v434 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v435 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v436 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v437 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v438 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v439 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v440 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v441 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v442 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v443 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v444 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v445 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v446 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v447 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v448 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v449 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v450 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v451 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v452 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v453 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v454 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v455 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v456 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v457 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v458 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v459 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v460 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v461 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v462 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v463 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v464 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v465 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v466 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v467 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v468 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v469 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v470 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v471 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v472 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v473 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v474 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v475 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v476 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v477 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v478 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v479 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v480 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v481 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v482 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v483 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v484 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v485 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v486 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v487 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v488 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v489 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v490 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v491 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v492 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v493 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v494 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v495 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v496 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v497 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v498 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v499 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v500 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v501 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v502 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v503 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v504 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v505 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v506 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v507 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v508 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v509 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v510 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v511 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v512 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v513 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v514 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v515 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v516 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v517 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v518 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v519 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v520 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v521 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v522 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v523 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v524 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v525 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v526 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v527 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v528 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v529 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v530 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v531 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v532 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v533 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v534 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v535 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v536 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v537 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v538 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v539 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v540 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v541 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v542 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v543 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v544 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v545 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v546 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v547 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v548 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v549 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v550 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v551 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v552 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v553 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v554 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v555 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v556 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v557 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v558 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v559 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v560 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v561 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v562 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v563 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v564 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v565 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v566 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v567 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v568 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v569 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v570 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v571 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v572 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v573 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v574 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v575 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v576 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v577 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v578 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v579 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v580 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v581 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v582 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v583 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v584 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v585 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v586 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v587 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v588 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v589 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v590 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v591 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v592 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v593 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v594 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v595 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v596 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v597 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v598 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v599 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v600 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v601 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v602 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v603 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v604 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v605 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v606 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v607 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v608 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v609 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v610 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v611 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v612 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v613 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v614 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v615 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v616 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v617 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v618 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v619 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v620 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v621 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v622 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v623 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v624 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v625 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v626 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v627 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v628 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v629 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v630 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v631 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v632 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v633 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v634 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v635 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v636 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v637 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v638 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v639 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v640 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v641 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v642 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v643 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v644 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v645 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v646 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v647 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v648 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v649 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v650 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v651 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v652 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v653 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v654 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v655 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v656 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v657 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v658 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v659 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v660 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v661 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v662 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v663 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v664 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v665 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v666 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v667 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v668 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v669 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v670 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v671 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v672 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v673 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v674 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v675 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v676 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v677 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v678 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v679 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v680 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v681 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v682 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v683 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v684 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v685 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v686 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v687 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v688 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v689 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v690 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v691 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v692 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v693 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v694 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v695 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v696 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v697 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v698 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v699 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v700 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v701 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v702 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v703 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v704 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v705 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v706 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v707 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v708 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v709 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v710 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v711 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v712 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v713 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v714 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v715 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v716 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v717 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v718 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v719 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v720 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v721 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v722 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v723 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v724 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v725 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v726 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v727 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v728 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v729 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v730 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v731 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v732 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v733 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v734 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v735 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v736 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v737 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v738 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v739 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v740 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v741 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v742 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v743 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v744 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v745 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v746 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v747 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v748 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v749 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v750 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v751 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v752 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v753 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v754 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v755 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v756 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v757 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v758 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v759 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v760 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v761 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v762 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v763 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v764 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v765 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v766 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v767 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v768 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v769 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v770 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v771 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v772 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v773 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v774 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v775 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v776 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v777 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v778 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v779 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v780 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v781 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v782 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v783 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v784 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v785 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v786 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v787 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v788 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v789 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v790 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v791 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v792 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v793 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v794 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v795 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v796 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v797 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v798 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v799 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v800 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v801 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v802 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v803 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v804 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v805 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v806 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v807 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v808 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v809 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v810 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v811 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v812 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v813 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v814 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v815 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v816 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v817 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v818 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v819 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v820 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v821 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v822 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v823 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v824 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v825 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v826 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v827 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v828 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v829 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v830 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v831 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v832 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v833 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v834 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v835 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v836 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v837 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v838 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v839 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v840 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v841 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v842 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v843 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v844 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v845 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v846 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v847 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v848 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v849 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v850 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v851 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v852 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v853 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v854 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v855 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v856 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v857 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v858 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v859 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v860 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v861 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v862 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v863 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v864 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v865 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v866 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v867 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v868 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v869 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v870 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v871 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v872 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v873 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v874 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v875 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v876 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v877 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v878 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v879 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v880 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v881 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v882 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v883 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v884 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v885 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v886 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v887 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v888 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v889 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v890 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v891 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v892 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v893 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v894 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v895 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v896 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v897 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v898 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v899 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v900 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v901 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v902 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v903 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v904 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v905 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v906 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v907 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v908 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v909 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v910 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v911 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v912 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v913 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v914 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v915 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v916 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v917 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v918 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v919 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v920 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v921 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v922 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v923 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v924 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v925 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v926 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v927 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v928 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v929 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v930 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v931 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v932 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v933 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v934 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v935 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v936 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v937 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v938 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v939 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v940 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v941 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v942 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v943 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v944 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v945 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v946 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v947 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v948 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v949 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v950 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v951 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v952 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v953 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v954 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v955 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v956 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v957 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v958 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v959 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v960 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v961 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v962 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v963 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v964 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v965 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v966 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v967 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v968 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v969 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v970 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v971 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v972 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v973 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v974 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v975 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v976 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v977 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v978 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v979 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v980 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v981 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v982 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v983 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v984 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v985 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v986 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v987 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v988 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v989 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v990 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v991 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v992 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v993 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v994 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v995 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v996 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v997 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#swapped> ?v998 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#swapped> ?v999 .
+    ?v0 <http://example.org/benchmark#tail> ?w .
+  }
+}

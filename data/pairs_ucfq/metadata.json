@@ -1,0 +1,1330 @@
+{
+  "suite": "ucfq",
+  "summary": "A conjunctive query of the corpus turned into a federated one, which is what an automatic source selection answers with. No corpus query names a federation, so the statement states one and each triple pattern is assigned a sub-federation of it. Seeds selected by taking, for each feature, the local corpus query with the most triple patterns. Two mutations are absent, the ones adding a clause at a member: the proposition settling them is stated for federations whose members are endpoints, and these members are virtual.",
+  "seeds": [
+    "auto_qc_nop_Q7b",
+    "auto_qc_proj_Q17b",
+    "auto_qc_proj_Q19c",
+    "auto_qc_proj_Q21b"
+  ],
+  "pairs": [
+    {
+      "id": "001-auto_qc_proj_Q17b-identity",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "identity",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "001-auto_qc_proj_Q17b-identity/sub.sparql",
+        "super": "001-auto_qc_proj_Q17b-identity/super.sparql"
+      }
+    },
+    {
+      "id": "002-auto_qc_proj_Q17b-reorder_body",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "reorder_body",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "002-auto_qc_proj_Q17b-reorder_body/sub.sparql",
+        "super": "002-auto_qc_proj_Q17b-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "003-auto_qc_proj_Q17b-reorder_body",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "reorder_body",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "003-auto_qc_proj_Q17b-reorder_body/sub.sparql",
+        "super": "003-auto_qc_proj_Q17b-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "004-auto_qc_proj_Q17b-reorder_body",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "reorder_body",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "004-auto_qc_proj_Q17b-reorder_body/sub.sparql",
+        "super": "004-auto_qc_proj_Q17b-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "005-auto_qc_proj_Q17b-rename_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "rename_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "005-auto_qc_proj_Q17b-rename_local_variable/sub.sparql",
+        "super": "005-auto_qc_proj_Q17b-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "006-auto_qc_proj_Q17b-rename_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "rename_local_variable",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "006-auto_qc_proj_Q17b-rename_local_variable/sub.sparql",
+        "super": "006-auto_qc_proj_Q17b-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "007-auto_qc_proj_Q17b-rename_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "rename_local_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "007-auto_qc_proj_Q17b-rename_local_variable/sub.sparql",
+        "super": "007-auto_qc_proj_Q17b-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "008-auto_qc_proj_Q17b-bind_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "bind_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "008-auto_qc_proj_Q17b-bind_local_variable/sub.sparql",
+        "super": "008-auto_qc_proj_Q17b-bind_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "009-auto_qc_proj_Q17b-drop_head_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "drop_head_variable",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "009-auto_qc_proj_Q17b-drop_head_variable/sub.sparql",
+        "super": "009-auto_qc_proj_Q17b-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "010-auto_qc_proj_Q17b-drop_head_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "drop_head_variable",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "010-auto_qc_proj_Q17b-drop_head_variable/sub.sparql",
+        "super": "010-auto_qc_proj_Q17b-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "011-auto_qc_proj_Q17b-drop_head_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "drop_head_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "011-auto_qc_proj_Q17b-drop_head_variable/sub.sparql",
+        "super": "011-auto_qc_proj_Q17b-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "012-auto_qc_proj_Q17b-swap_constant",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "swap_constant",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "012-auto_qc_proj_Q17b-swap_constant/sub.sparql",
+        "super": "012-auto_qc_proj_Q17b-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "013-auto_qc_proj_Q17b-swap_constant",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "swap_constant",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "013-auto_qc_proj_Q17b-swap_constant/sub.sparql",
+        "super": "013-auto_qc_proj_Q17b-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "014-auto_qc_proj_Q17b-relax_clause",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "relax_clause",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "014-auto_qc_proj_Q17b-relax_clause/sub.sparql",
+        "super": "014-auto_qc_proj_Q17b-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "015-auto_qc_proj_Q17b-relax_clause",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "relax_clause",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "015-auto_qc_proj_Q17b-relax_clause/sub.sparql",
+        "super": "015-auto_qc_proj_Q17b-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "016-auto_qc_proj_Q17b-rename_member",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "rename_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "016-auto_qc_proj_Q17b-rename_member/sub.sparql",
+        "super": "016-auto_qc_proj_Q17b-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "017-auto_qc_proj_Q17b-rename_member",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "rename_member",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "files": {
+        "sub": "017-auto_qc_proj_Q17b-rename_member/sub.sparql",
+        "super": "017-auto_qc_proj_Q17b-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "018-auto_qc_proj_Q17b-add_member_to_super",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "add_member_to_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "files": {
+        "sub": "018-auto_qc_proj_Q17b-add_member_to_super/sub.sparql",
+        "super": "018-auto_qc_proj_Q17b-add_member_to_super/super.sparql"
+      }
+    },
+    {
+      "id": "019-auto_qc_nop_Q7b-assign_federation",
+      "suite": "ucfq",
+      "query": "auto_qc_nop_Q7b",
+      "operator": "assign_federation",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "019-auto_qc_nop_Q7b-assign_federation/sub.sparql",
+        "super": "019-auto_qc_nop_Q7b-assign_federation/super.sparql"
+      }
+    },
+    {
+      "id": "020-auto_qc_nop_Q7b-widen_virtual_member",
+      "suite": "ucfq",
+      "query": "auto_qc_nop_Q7b",
+      "operator": "widen_virtual_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "020-auto_qc_nop_Q7b-widen_virtual_member/sub.sparql",
+        "super": "020-auto_qc_nop_Q7b-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "021-auto_qc_nop_Q7b-widen_virtual_member",
+      "suite": "ucfq",
+      "query": "auto_qc_nop_Q7b",
+      "operator": "widen_virtual_member",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "files": {
+        "sub": "021-auto_qc_nop_Q7b-widen_virtual_member/sub.sparql",
+        "super": "021-auto_qc_nop_Q7b-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "022-auto_qc_proj_Q17b-drop_variable_from_super",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "drop_variable_from_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "022-auto_qc_proj_Q17b-drop_variable_from_super/sub.sparql",
+        "super": "022-auto_qc_proj_Q17b-drop_variable_from_super/super.sparql"
+      }
+    },
+    {
+      "id": "023-auto_qc_proj_Q21b-identity",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "identity",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "023-auto_qc_proj_Q21b-identity/sub.sparql",
+        "super": "023-auto_qc_proj_Q21b-identity/super.sparql"
+      }
+    },
+    {
+      "id": "024-auto_qc_proj_Q21b-reorder_body",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "reorder_body",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "024-auto_qc_proj_Q21b-reorder_body/sub.sparql",
+        "super": "024-auto_qc_proj_Q21b-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "025-auto_qc_proj_Q21b-reorder_body",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "reorder_body",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "025-auto_qc_proj_Q21b-reorder_body/sub.sparql",
+        "super": "025-auto_qc_proj_Q21b-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "026-auto_qc_proj_Q21b-reorder_body",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "reorder_body",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "026-auto_qc_proj_Q21b-reorder_body/sub.sparql",
+        "super": "026-auto_qc_proj_Q21b-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "027-auto_qc_proj_Q21b-rename_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "rename_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "027-auto_qc_proj_Q21b-rename_local_variable/sub.sparql",
+        "super": "027-auto_qc_proj_Q21b-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "028-auto_qc_proj_Q21b-rename_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "rename_local_variable",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "028-auto_qc_proj_Q21b-rename_local_variable/sub.sparql",
+        "super": "028-auto_qc_proj_Q21b-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "029-auto_qc_proj_Q21b-rename_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "rename_local_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "029-auto_qc_proj_Q21b-rename_local_variable/sub.sparql",
+        "super": "029-auto_qc_proj_Q21b-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "030-auto_qc_proj_Q21b-bind_local_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "bind_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "030-auto_qc_proj_Q21b-bind_local_variable/sub.sparql",
+        "super": "030-auto_qc_proj_Q21b-bind_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "031-auto_qc_proj_Q21b-drop_head_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "drop_head_variable",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "031-auto_qc_proj_Q21b-drop_head_variable/sub.sparql",
+        "super": "031-auto_qc_proj_Q21b-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "032-auto_qc_proj_Q21b-drop_head_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "drop_head_variable",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "032-auto_qc_proj_Q21b-drop_head_variable/sub.sparql",
+        "super": "032-auto_qc_proj_Q21b-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "033-auto_qc_proj_Q21b-drop_head_variable",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "drop_head_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "033-auto_qc_proj_Q21b-drop_head_variable/sub.sparql",
+        "super": "033-auto_qc_proj_Q21b-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "034-auto_qc_proj_Q21b-swap_constant",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "swap_constant",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "034-auto_qc_proj_Q21b-swap_constant/sub.sparql",
+        "super": "034-auto_qc_proj_Q21b-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "035-auto_qc_proj_Q21b-swap_constant",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "swap_constant",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "035-auto_qc_proj_Q21b-swap_constant/sub.sparql",
+        "super": "035-auto_qc_proj_Q21b-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "036-auto_qc_proj_Q21b-relax_clause",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "relax_clause",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "036-auto_qc_proj_Q21b-relax_clause/sub.sparql",
+        "super": "036-auto_qc_proj_Q21b-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "037-auto_qc_proj_Q21b-relax_clause",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "relax_clause",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "037-auto_qc_proj_Q21b-relax_clause/sub.sparql",
+        "super": "037-auto_qc_proj_Q21b-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "038-auto_qc_proj_Q21b-rename_member",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "rename_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "038-auto_qc_proj_Q21b-rename_member/sub.sparql",
+        "super": "038-auto_qc_proj_Q21b-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "039-auto_qc_proj_Q21b-rename_member",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "rename_member",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "files": {
+        "sub": "039-auto_qc_proj_Q21b-rename_member/sub.sparql",
+        "super": "039-auto_qc_proj_Q21b-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "040-auto_qc_proj_Q21b-add_member_to_super",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q21b",
+      "operator": "add_member_to_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "files": {
+        "sub": "040-auto_qc_proj_Q21b-add_member_to_super/sub.sparql",
+        "super": "040-auto_qc_proj_Q21b-add_member_to_super/super.sparql"
+      }
+    },
+    {
+      "id": "041-auto_qc_proj_Q17b-assign_federation",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "assign_federation",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "041-auto_qc_proj_Q17b-assign_federation/sub.sparql",
+        "super": "041-auto_qc_proj_Q17b-assign_federation/super.sparql"
+      }
+    },
+    {
+      "id": "042-auto_qc_proj_Q17b-widen_virtual_member",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "widen_virtual_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "042-auto_qc_proj_Q17b-widen_virtual_member/sub.sparql",
+        "super": "042-auto_qc_proj_Q17b-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "043-auto_qc_proj_Q17b-widen_virtual_member",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q17b",
+      "operator": "widen_virtual_member",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d",
+          "http://example.org/e"
+        ]
+      },
+      "files": {
+        "sub": "043-auto_qc_proj_Q17b-widen_virtual_member/sub.sparql",
+        "super": "043-auto_qc_proj_Q17b-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "044-auto_qc_proj_Q19c-drop_variable_from_super",
+      "suite": "ucfq",
+      "query": "auto_qc_proj_Q19c",
+      "operator": "drop_variable_from_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c",
+          "http://example.org/d"
+        ]
+      },
+      "files": {
+        "sub": "044-auto_qc_proj_Q19c-drop_variable_from_super/sub.sparql",
+        "super": "044-auto_qc_proj_Q19c-drop_variable_from_super/super.sparql"
+      }
+    }
+  ]
+}

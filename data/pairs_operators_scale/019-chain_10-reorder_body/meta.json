@@ -1,0 +1,14 @@
+{
+  "id": "019-chain_10-reorder_body",
+  "suite": "operators",
+  "query": "chain_10",
+  "operator": "reorder_body",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

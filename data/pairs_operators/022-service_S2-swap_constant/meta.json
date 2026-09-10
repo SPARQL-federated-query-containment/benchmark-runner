@@ -1,0 +1,14 @@
+{
+  "id": "022-service_S2-swap_constant",
+  "suite": "operators",
+  "query": "service_S2",
+  "operator": "swap_constant",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

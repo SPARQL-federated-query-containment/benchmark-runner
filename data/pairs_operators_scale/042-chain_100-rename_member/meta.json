@@ -1,0 +1,14 @@
+{
+  "id": "042-chain_100-rename_member",
+  "suite": "operators",
+  "query": "chain_100",
+  "operator": "rename_member",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

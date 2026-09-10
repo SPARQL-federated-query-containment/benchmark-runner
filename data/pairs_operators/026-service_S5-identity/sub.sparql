@@ -1,0 +1,10 @@
+SELECT ?film ?director ?genre WHERE {
+  SERVICE <http://dbpedia-subset.system.ip.address:8891/sparql> {
+    ?film <http://dbpedia.org/ontology/director> ?director .
+    ?director <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Italy> .
+  }
+  SERVICE <http://linked-mdb.system.ip.address:8896/sparql> {
+    ?x <http://www.w3.org/2002/07/owl#sameAs> ?film .
+    ?x <http://data.linkedmdb.org/resource/movie/genre> ?genre .
+  }
+}

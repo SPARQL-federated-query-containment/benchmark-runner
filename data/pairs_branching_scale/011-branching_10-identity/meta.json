@@ -1,0 +1,14 @@
+{
+  "id": "011-branching_10-identity",
+  "suite": "branching",
+  "query": "branching_10",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

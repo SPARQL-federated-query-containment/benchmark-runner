@@ -1,0 +1,14 @@
+{
+  "id": "037-service_S5-swap_constant",
+  "suite": "operators",
+  "query": "service_S5",
+  "operator": "swap_constant",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

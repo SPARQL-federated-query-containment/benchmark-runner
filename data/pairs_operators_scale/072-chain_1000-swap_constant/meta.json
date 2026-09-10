@@ -1,0 +1,14 @@
+{
+  "id": "072-chain_1000-swap_constant",
+  "suite": "operators",
+  "query": "chain_1000",
+  "operator": "swap_constant",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

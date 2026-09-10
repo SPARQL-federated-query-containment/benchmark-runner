@@ -1,0 +1,12 @@
+SELECT ?age ?course ?dept ?email ?sex ?ssn ?tel ?x ?y ?z WHERE {
+  ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.lehigh.edu//univ-bench.owl#Student> .
+  ?x <http://www.lehigh.edu//univ-bench.owl#name> ?y .
+  ?x <http://www.lehigh.edu//univ-bench.owl#nickName> ?z .
+  ?x <http://www.lehigh.edu//univ-bench.owl#telephone> ?tel .
+  ?x <http://www.lehigh.edu//univ-bench.owl#ssn> ?ssn .
+  ?x <http://www.lehigh.edu//univ-bench.owl#age> ?age .
+  ?x <http://www.lehigh.edu//univ-bench.owl#sex> ?sex .
+  ?x <http://www.lehigh.edu//univ-bench.owl#emailAddress> ?email .
+  ?x <http://www.lehigh.edu//univ-bench.owl#memberOf> ?dept .
+  ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?course .
+}

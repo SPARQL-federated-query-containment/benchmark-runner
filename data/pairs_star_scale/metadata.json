@@ -1,0 +1,1442 @@
+{
+  "suite": "star",
+  "summary": "Seeds selected by taking, for each feature, the corpus query reading the most triple patterns off one subject: up to eleven clauses hanging on a single variable. The mutations meet a query shape the operators suite never reaches.",
+  "seeds": [
+    "star_10",
+    "star_100",
+    "star_1000",
+    "star_local_10",
+    "star_local_100",
+    "star_local_1000"
+  ],
+  "pairs": [
+    {
+      "id": "001-star_10-add_fresh_variable_clause_at_contacted_member_to_sub",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "add_fresh_variable_clause_at_contacted_member_to_sub",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "001-star_10-add_fresh_variable_clause_at_contacted_member_to_sub/sub.sparql",
+        "super": "001-star_10-add_fresh_variable_clause_at_contacted_member_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "002-star_10-add_fresh_variable_clause_at_new_member_to_sub",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "add_fresh_variable_clause_at_new_member_to_sub",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "002-star_10-add_fresh_variable_clause_at_new_member_to_sub/sub.sparql",
+        "super": "002-star_10-add_fresh_variable_clause_at_new_member_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "003-star_10-add_member_to_super",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "add_member_to_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "003-star_10-add_member_to_super/sub.sparql",
+        "super": "003-star_10-add_member_to_super/super.sparql"
+      }
+    },
+    {
+      "id": "004-star_10-add_shared_variable_clause_to_sub",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "add_shared_variable_clause_to_sub",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "004-star_10-add_shared_variable_clause_to_sub/sub.sparql",
+        "super": "004-star_10-add_shared_variable_clause_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "005-star_local_10-assign_federation",
+      "suite": "star",
+      "query": "star_local_10",
+      "operator": "assign_federation",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "005-star_local_10-assign_federation/sub.sparql",
+        "super": "005-star_local_10-assign_federation/super.sparql"
+      }
+    },
+    {
+      "id": "006-star_10-bind_local_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "bind_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "006-star_10-bind_local_variable/sub.sparql",
+        "super": "006-star_10-bind_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "007-star_10-drop_head_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "drop_head_variable",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "007-star_10-drop_head_variable/sub.sparql",
+        "super": "007-star_10-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "008-star_10-drop_head_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "drop_head_variable",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "008-star_10-drop_head_variable/sub.sparql",
+        "super": "008-star_10-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "009-star_10-drop_head_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "drop_head_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "009-star_10-drop_head_variable/sub.sparql",
+        "super": "009-star_10-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "010-star_10-drop_variable_from_super",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "drop_variable_from_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "010-star_10-drop_variable_from_super/sub.sparql",
+        "super": "010-star_10-drop_variable_from_super/super.sparql"
+      }
+    },
+    {
+      "id": "011-star_10-identity",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "identity",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "011-star_10-identity/sub.sparql",
+        "super": "011-star_10-identity/super.sparql"
+      }
+    },
+    {
+      "id": "012-star_10-relax_clause",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "relax_clause",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "012-star_10-relax_clause/sub.sparql",
+        "super": "012-star_10-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "013-star_10-relax_clause",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "relax_clause",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "013-star_10-relax_clause/sub.sparql",
+        "super": "013-star_10-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "014-star_10-rename_local_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "rename_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "014-star_10-rename_local_variable/sub.sparql",
+        "super": "014-star_10-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "015-star_10-rename_local_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "rename_local_variable",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "015-star_10-rename_local_variable/sub.sparql",
+        "super": "015-star_10-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "016-star_10-rename_local_variable",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "rename_local_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "016-star_10-rename_local_variable/sub.sparql",
+        "super": "016-star_10-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "017-star_10-rename_member",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "rename_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "017-star_10-rename_member/sub.sparql",
+        "super": "017-star_10-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "018-star_10-rename_member",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "rename_member",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "018-star_10-rename_member/sub.sparql",
+        "super": "018-star_10-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "019-star_10-reorder_body",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "reorder_body",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "019-star_10-reorder_body/sub.sparql",
+        "super": "019-star_10-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "020-star_10-reorder_body",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "reorder_body",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "020-star_10-reorder_body/sub.sparql",
+        "super": "020-star_10-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "021-star_10-reorder_body",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "reorder_body",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "021-star_10-reorder_body/sub.sparql",
+        "super": "021-star_10-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "022-star_10-swap_constant",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "swap_constant",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "022-star_10-swap_constant/sub.sparql",
+        "super": "022-star_10-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "023-star_10-swap_constant",
+      "suite": "star",
+      "query": "star_10",
+      "operator": "swap_constant",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "023-star_10-swap_constant/sub.sparql",
+        "super": "023-star_10-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "024-star_local_10-widen_virtual_member",
+      "suite": "star",
+      "query": "star_local_10",
+      "operator": "widen_virtual_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "024-star_local_10-widen_virtual_member/sub.sparql",
+        "super": "024-star_local_10-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "025-star_local_10-widen_virtual_member",
+      "suite": "star",
+      "query": "star_local_10",
+      "operator": "widen_virtual_member",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c"
+        ]
+      },
+      "files": {
+        "sub": "025-star_local_10-widen_virtual_member/sub.sparql",
+        "super": "025-star_local_10-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "026-star_100-add_fresh_variable_clause_at_contacted_member_to_sub",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "add_fresh_variable_clause_at_contacted_member_to_sub",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "026-star_100-add_fresh_variable_clause_at_contacted_member_to_sub/sub.sparql",
+        "super": "026-star_100-add_fresh_variable_clause_at_contacted_member_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "027-star_100-add_fresh_variable_clause_at_new_member_to_sub",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "add_fresh_variable_clause_at_new_member_to_sub",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "027-star_100-add_fresh_variable_clause_at_new_member_to_sub/sub.sparql",
+        "super": "027-star_100-add_fresh_variable_clause_at_new_member_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "028-star_100-add_member_to_super",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "add_member_to_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "028-star_100-add_member_to_super/sub.sparql",
+        "super": "028-star_100-add_member_to_super/super.sparql"
+      }
+    },
+    {
+      "id": "029-star_100-add_shared_variable_clause_to_sub",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "add_shared_variable_clause_to_sub",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "029-star_100-add_shared_variable_clause_to_sub/sub.sparql",
+        "super": "029-star_100-add_shared_variable_clause_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "030-star_local_100-assign_federation",
+      "suite": "star",
+      "query": "star_local_100",
+      "operator": "assign_federation",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "030-star_local_100-assign_federation/sub.sparql",
+        "super": "030-star_local_100-assign_federation/super.sparql"
+      }
+    },
+    {
+      "id": "031-star_100-bind_local_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "bind_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "031-star_100-bind_local_variable/sub.sparql",
+        "super": "031-star_100-bind_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "032-star_100-drop_head_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "drop_head_variable",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "032-star_100-drop_head_variable/sub.sparql",
+        "super": "032-star_100-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "033-star_100-drop_head_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "drop_head_variable",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "033-star_100-drop_head_variable/sub.sparql",
+        "super": "033-star_100-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "034-star_100-drop_head_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "drop_head_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "034-star_100-drop_head_variable/sub.sparql",
+        "super": "034-star_100-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "035-star_100-drop_variable_from_super",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "drop_variable_from_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "035-star_100-drop_variable_from_super/sub.sparql",
+        "super": "035-star_100-drop_variable_from_super/super.sparql"
+      }
+    },
+    {
+      "id": "036-star_100-identity",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "identity",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "036-star_100-identity/sub.sparql",
+        "super": "036-star_100-identity/super.sparql"
+      }
+    },
+    {
+      "id": "037-star_100-relax_clause",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "relax_clause",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "037-star_100-relax_clause/sub.sparql",
+        "super": "037-star_100-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "038-star_100-relax_clause",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "relax_clause",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "038-star_100-relax_clause/sub.sparql",
+        "super": "038-star_100-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "039-star_100-rename_local_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "rename_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "039-star_100-rename_local_variable/sub.sparql",
+        "super": "039-star_100-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "040-star_100-rename_local_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "rename_local_variable",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "040-star_100-rename_local_variable/sub.sparql",
+        "super": "040-star_100-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "041-star_100-rename_local_variable",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "rename_local_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "041-star_100-rename_local_variable/sub.sparql",
+        "super": "041-star_100-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "042-star_100-rename_member",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "rename_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "042-star_100-rename_member/sub.sparql",
+        "super": "042-star_100-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "043-star_100-rename_member",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "rename_member",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "043-star_100-rename_member/sub.sparql",
+        "super": "043-star_100-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "044-star_100-reorder_body",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "reorder_body",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "044-star_100-reorder_body/sub.sparql",
+        "super": "044-star_100-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "045-star_100-reorder_body",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "reorder_body",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "045-star_100-reorder_body/sub.sparql",
+        "super": "045-star_100-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "046-star_100-reorder_body",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "reorder_body",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "046-star_100-reorder_body/sub.sparql",
+        "super": "046-star_100-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "047-star_100-swap_constant",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "swap_constant",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "047-star_100-swap_constant/sub.sparql",
+        "super": "047-star_100-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "048-star_100-swap_constant",
+      "suite": "star",
+      "query": "star_100",
+      "operator": "swap_constant",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "048-star_100-swap_constant/sub.sparql",
+        "super": "048-star_100-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "049-star_local_100-widen_virtual_member",
+      "suite": "star",
+      "query": "star_local_100",
+      "operator": "widen_virtual_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "049-star_local_100-widen_virtual_member/sub.sparql",
+        "super": "049-star_local_100-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "050-star_local_100-widen_virtual_member",
+      "suite": "star",
+      "query": "star_local_100",
+      "operator": "widen_virtual_member",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c"
+        ]
+      },
+      "files": {
+        "sub": "050-star_local_100-widen_virtual_member/sub.sparql",
+        "super": "050-star_local_100-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "051-star_1000-add_fresh_variable_clause_at_contacted_member_to_sub",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "add_fresh_variable_clause_at_contacted_member_to_sub",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "051-star_1000-add_fresh_variable_clause_at_contacted_member_to_sub/sub.sparql",
+        "super": "051-star_1000-add_fresh_variable_clause_at_contacted_member_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "052-star_1000-add_fresh_variable_clause_at_new_member_to_sub",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "add_fresh_variable_clause_at_new_member_to_sub",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "052-star_1000-add_fresh_variable_clause_at_new_member_to_sub/sub.sparql",
+        "super": "052-star_1000-add_fresh_variable_clause_at_new_member_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "053-star_1000-add_member_to_super",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "add_member_to_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "053-star_1000-add_member_to_super/sub.sparql",
+        "super": "053-star_1000-add_member_to_super/super.sparql"
+      }
+    },
+    {
+      "id": "054-star_1000-add_shared_variable_clause_to_sub",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "add_shared_variable_clause_to_sub",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "054-star_1000-add_shared_variable_clause_to_sub/sub.sparql",
+        "super": "054-star_1000-add_shared_variable_clause_to_sub/super.sparql"
+      }
+    },
+    {
+      "id": "055-star_local_1000-assign_federation",
+      "suite": "star",
+      "query": "star_local_1000",
+      "operator": "assign_federation",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "055-star_local_1000-assign_federation/sub.sparql",
+        "super": "055-star_local_1000-assign_federation/super.sparql"
+      }
+    },
+    {
+      "id": "056-star_1000-bind_local_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "bind_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "056-star_1000-bind_local_variable/sub.sparql",
+        "super": "056-star_1000-bind_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "057-star_1000-drop_head_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "drop_head_variable",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "057-star_1000-drop_head_variable/sub.sparql",
+        "super": "057-star_1000-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "058-star_1000-drop_head_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "drop_head_variable",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "058-star_1000-drop_head_variable/sub.sparql",
+        "super": "058-star_1000-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "059-star_1000-drop_head_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "drop_head_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "059-star_1000-drop_head_variable/sub.sparql",
+        "super": "059-star_1000-drop_head_variable/super.sparql"
+      }
+    },
+    {
+      "id": "060-star_1000-drop_variable_from_super",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "drop_variable_from_super",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "060-star_1000-drop_variable_from_super/sub.sparql",
+        "super": "060-star_1000-drop_variable_from_super/super.sparql"
+      }
+    },
+    {
+      "id": "061-star_1000-identity",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "identity",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "061-star_1000-identity/sub.sparql",
+        "super": "061-star_1000-identity/super.sparql"
+      }
+    },
+    {
+      "id": "062-star_1000-relax_clause",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "relax_clause",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "062-star_1000-relax_clause/sub.sparql",
+        "super": "062-star_1000-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "063-star_1000-relax_clause",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "relax_clause",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "063-star_1000-relax_clause/sub.sparql",
+        "super": "063-star_1000-relax_clause/super.sparql"
+      }
+    },
+    {
+      "id": "064-star_1000-rename_local_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "rename_local_variable",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "064-star_1000-rename_local_variable/sub.sparql",
+        "super": "064-star_1000-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "065-star_1000-rename_local_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "rename_local_variable",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "065-star_1000-rename_local_variable/sub.sparql",
+        "super": "065-star_1000-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "066-star_1000-rename_local_variable",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "rename_local_variable",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "066-star_1000-rename_local_variable/sub.sparql",
+        "super": "066-star_1000-rename_local_variable/super.sparql"
+      }
+    },
+    {
+      "id": "067-star_1000-rename_member",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "rename_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "067-star_1000-rename_member/sub.sparql",
+        "super": "067-star_1000-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "068-star_1000-rename_member",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "rename_member",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "068-star_1000-rename_member/sub.sparql",
+        "super": "068-star_1000-rename_member/super.sparql"
+      }
+    },
+    {
+      "id": "069-star_1000-reorder_body",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "reorder_body",
+      "side": "sub",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "069-star_1000-reorder_body/sub.sparql",
+        "super": "069-star_1000-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "070-star_1000-reorder_body",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "reorder_body",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "070-star_1000-reorder_body/sub.sparql",
+        "super": "070-star_1000-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "071-star_1000-reorder_body",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "reorder_body",
+      "side": "both",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "071-star_1000-reorder_body/sub.sparql",
+        "super": "071-star_1000-reorder_body/super.sparql"
+      }
+    },
+    {
+      "id": "072-star_1000-swap_constant",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "swap_constant",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "072-star_1000-swap_constant/sub.sparql",
+        "super": "072-star_1000-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "073-star_1000-swap_constant",
+      "suite": "star",
+      "query": "star_1000",
+      "operator": "swap_constant",
+      "side": "super",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag-set"
+      },
+      "super": {
+        "semantics": "bag-set"
+      },
+      "files": {
+        "sub": "073-star_1000-swap_constant/sub.sparql",
+        "super": "073-star_1000-swap_constant/super.sparql"
+      }
+    },
+    {
+      "id": "074-star_local_1000-widen_virtual_member",
+      "suite": "star",
+      "query": "star_local_1000",
+      "operator": "widen_virtual_member",
+      "side": "sub",
+      "expected": "not contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "files": {
+        "sub": "074-star_local_1000-widen_virtual_member/sub.sparql",
+        "super": "074-star_local_1000-widen_virtual_member/super.sparql"
+      }
+    },
+    {
+      "id": "075-star_local_1000-widen_virtual_member",
+      "suite": "star",
+      "query": "star_local_1000",
+      "operator": "widen_virtual_member",
+      "side": "super",
+      "expected": "contained",
+      "sub": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b"
+        ]
+      },
+      "super": {
+        "semantics": "bag",
+        "federation": [
+          "http://example.org/a",
+          "http://example.org/b",
+          "http://example.org/c"
+        ]
+      },
+      "files": {
+        "sub": "075-star_local_1000-widen_virtual_member/sub.sparql",
+        "super": "075-star_local_1000-widen_virtual_member/super.sparql"
+      }
+    }
+  ]
+}

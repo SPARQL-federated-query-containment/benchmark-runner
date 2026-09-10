@@ -1,0 +1,14 @@
+{
+  "id": "017-service_S4-rename_member",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "rename_member",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

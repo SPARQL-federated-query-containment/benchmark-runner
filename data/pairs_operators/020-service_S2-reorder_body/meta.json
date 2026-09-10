@@ -1,0 +1,14 @@
+{
+  "id": "020-service_S2-reorder_body",
+  "suite": "operators",
+  "query": "service_S2",
+  "operator": "reorder_body",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

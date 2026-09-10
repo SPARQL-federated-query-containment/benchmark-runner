@@ -1,0 +1,14 @@
+{
+  "id": "018-service_S4-add_member_to_super",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "add_member_to_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

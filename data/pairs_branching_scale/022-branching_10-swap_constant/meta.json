@@ -1,0 +1,14 @@
+{
+  "id": "022-branching_10-swap_constant",
+  "suite": "branching",
+  "query": "branching_10",
+  "operator": "swap_constant",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

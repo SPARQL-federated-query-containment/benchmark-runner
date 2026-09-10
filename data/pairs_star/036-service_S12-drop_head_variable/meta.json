@@ -1,0 +1,14 @@
+{
+  "id": "036-service_S12-drop_head_variable",
+  "suite": "star",
+  "query": "service_S12",
+  "operator": "drop_head_variable",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

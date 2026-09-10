@@ -1,0 +1,52 @@
+SELECT ?x ?z WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/GraduateStudent> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/GraduateStudent> .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/Department> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/Department> .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.example.org/memberOf> ?y .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.example.org/memberOf> ?y .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?y <http://www.example.org/subOrganizationOf> ?u .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?y <http://www.example.org/subOrganizationOf> ?u .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.example.org/email> ?z .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.example.org/email> ?z .
+    }
+  }
+}

@@ -1,0 +1,7 @@
+SELECT ?x ?z WHERE {
+  ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/GraduateStudent> .
+  ?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/Department> .
+  ?x <http://www.example.org/memberOf> ?y .
+  ?y <http://www.example.org/subOrganizationOf> ?u .
+  ?x <http://www.example.org/email> ?z .
+}

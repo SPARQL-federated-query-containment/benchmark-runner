@@ -1,0 +1,14 @@
+{
+  "id": "069-star_1000-reorder_body",
+  "suite": "star",
+  "query": "star_1000",
+  "operator": "reorder_body",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

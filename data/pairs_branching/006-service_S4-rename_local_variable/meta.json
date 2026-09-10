@@ -1,0 +1,14 @@
+{
+  "id": "006-service_S4-rename_local_variable",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "rename_local_variable",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

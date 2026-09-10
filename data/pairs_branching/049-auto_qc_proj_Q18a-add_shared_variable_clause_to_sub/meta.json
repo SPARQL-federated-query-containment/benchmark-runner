@@ -1,0 +1,14 @@
+{
+  "id": "049-auto_qc_proj_Q18a-add_shared_variable_clause_to_sub",
+  "suite": "branching",
+  "query": "auto_qc_proj_Q18a",
+  "operator": "add_shared_variable_clause_to_sub",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

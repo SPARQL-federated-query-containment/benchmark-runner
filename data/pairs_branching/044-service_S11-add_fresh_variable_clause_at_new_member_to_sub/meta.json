@@ -1,0 +1,14 @@
+{
+  "id": "044-service_S11-add_fresh_variable_clause_at_new_member_to_sub",
+  "suite": "branching",
+  "query": "service_S11",
+  "operator": "add_fresh_variable_clause_at_new_member_to_sub",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "011-chain_10-identity",
+  "suite": "operators",
+  "query": "chain_10",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

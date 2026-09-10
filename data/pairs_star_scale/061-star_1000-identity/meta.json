@@ -1,0 +1,14 @@
+{
+  "id": "061-star_1000-identity",
+  "suite": "star",
+  "query": "star_1000",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

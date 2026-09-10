@@ -1,0 +1,14 @@
+{
+  "id": "010-star_10-drop_variable_from_super",
+  "suite": "star",
+  "query": "star_10",
+  "operator": "drop_variable_from_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

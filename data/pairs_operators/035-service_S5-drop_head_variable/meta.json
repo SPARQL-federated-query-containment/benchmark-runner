@@ -1,0 +1,14 @@
+{
+  "id": "035-service_S5-drop_head_variable",
+  "suite": "operators",
+  "query": "service_S5",
+  "operator": "drop_head_variable",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

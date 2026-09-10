@@ -1,0 +1,14 @@
+{
+  "id": "001-service_S11-identity",
+  "suite": "star",
+  "query": "service_S11",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

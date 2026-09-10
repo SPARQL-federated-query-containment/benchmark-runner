@@ -6,10 +6,22 @@ import { startEngines, type EngineName } from "./engines";
 import { measure, warmUp } from "./measure";
 import { captureEnv, writeReport } from "./report";
 
-const SUITES: Record<string, string> = {
-  correctness: "data/pairs",
-  scale: "data/scale_pairs",
+const CORRECTNESS = ["operators", "star", "branching", "ucfq"];
+const SCALE = CORRECTNESS.map((suite) => `${suite}-scale`);
+
+const SUITES: Record<string, string> = Object.fromEntries([
+  ...CORRECTNESS.map((suite) => [suite, `data/pairs_${suite}`]),
+  ...SCALE.map((suite) => [suite, `data/pairs_${suite.replace("-scale", "")}_scale`]),
+]);
+
+const GROUPS: Record<string, string[]> = {
+  correctness: CORRECTNESS,
+  scale: SCALE,
+  all: Object.keys(SUITES),
 };
+
+const resolveSuites = (name: string): string[] | undefined =>
+  GROUPS[name] ?? (SUITES[name] !== undefined ? [name] : undefined);
 
 const anInteger = (value: string): number => {
   const parsed = Number.parseInt(value, 10);
@@ -23,7 +35,11 @@ program
   .description("Run the federated query containment benchmark.")
   .option("-r, --repetitions <n>", "timed repetitions per pair", anInteger, 1)
   .option("-w, --warmup <n>", "warmup rounds after the engine starts", anInteger, 0)
-  .option("--suite <suite>", "correctness | scale | all", "all")
+  .option(
+    "--suite <suite>",
+    "operators | star | branching | ucfq (append -scale for the twin) | correctness | scale | all",
+    "all",
+  )
   .option("--engine <engine>", "bfc | specs | both", "both")
   .option("--filter <regex>", "only pairs whose id matches")
   .option("--out <dir>", "run directory (default results/<timestamp>)");
@@ -39,13 +55,10 @@ const options = program.opts<{
   out?: string;
 }>();
 
-const suiteNames =
-  options.suite === "all" ? Object.keys(SUITES) : [options.suite];
-for (const name of suiteNames) {
-  if (SUITES[name] === undefined) {
-    console.error(`unknown suite "${name}"`);
-    process.exit(2);
-  }
+const suiteNames = resolveSuites(options.suite);
+if (suiteNames === undefined) {
+  console.error(`unknown suite "${options.suite}"`);
+  process.exit(2);
 }
 
 const engineNames: EngineName[] =

@@ -1,0 +1,14 @@
+{
+  "id": "043-service_S12-add_member_to_super",
+  "suite": "star",
+  "query": "service_S12",
+  "operator": "add_member_to_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

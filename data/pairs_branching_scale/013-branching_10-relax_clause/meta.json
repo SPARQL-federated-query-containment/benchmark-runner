@@ -1,0 +1,14 @@
+{
+  "id": "013-branching_10-relax_clause",
+  "suite": "branching",
+  "query": "branching_10",
+  "operator": "relax_clause",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

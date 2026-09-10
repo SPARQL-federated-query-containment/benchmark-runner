@@ -1,0 +1,14 @@
+{
+  "id": "041-star_100-rename_local_variable",
+  "suite": "star",
+  "query": "star_100",
+  "operator": "rename_local_variable",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

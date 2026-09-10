@@ -1,0 +1,14 @@
+{
+  "id": "014-service_S4-relax_clause",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "relax_clause",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

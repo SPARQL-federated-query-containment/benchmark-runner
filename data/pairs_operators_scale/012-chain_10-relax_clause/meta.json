@@ -1,0 +1,14 @@
+{
+  "id": "012-chain_10-relax_clause",
+  "suite": "operators",
+  "query": "chain_10",
+  "operator": "relax_clause",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

@@ -1,0 +1,22 @@
+SELECT ?x WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.example.org/takesCourse> "Course10"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.example.org/takesCourse> "Course10"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.example.org/takesCourse> "Course20"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.example.org/takesCourse> "Course20"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+}

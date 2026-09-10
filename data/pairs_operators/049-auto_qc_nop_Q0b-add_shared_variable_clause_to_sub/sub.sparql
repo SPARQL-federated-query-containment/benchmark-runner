@@ -1,0 +1,4 @@
+SELECT ?x WHERE {
+  ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.lehigh.edu//univ-bench.owl#GraduateStudent> .
+  ?x <http://example.org/r> ?x .
+}

@@ -1,0 +1,14 @@
+{
+  "id": "035-branching_100-drop_variable_from_super",
+  "suite": "branching",
+  "query": "branching_100",
+  "operator": "drop_variable_from_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

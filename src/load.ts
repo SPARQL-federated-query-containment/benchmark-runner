@@ -12,6 +12,7 @@ export interface SideMeta {
 
 export interface PairMeta {
   id: string;
+  suite?: string;
   query: string;
   operator: string;
   side: Side;
@@ -34,12 +35,12 @@ function sizeOf(query: string): number | undefined {
 }
 
 export async function load(directory: string): SafePromise<Pair[]> {
-  const indexFile = Bun.file(join(directory, "index.json"));
+  const indexFile = Bun.file(join(directory, "metadata.json"));
 
   if (!(await indexFile.exists())) {
     return error(
       new Error(
-        `${directory}/index.json is missing — copy it from ../benchmark/build`,
+        `${directory}/metadata.json is missing — copy it from ../benchmark/build`,
       ),
     );
   }

@@ -1,0 +1,14 @@
+{
+  "id": "002-service_S4-reorder_body",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "reorder_body",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

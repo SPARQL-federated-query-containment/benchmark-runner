@@ -1,0 +1,14 @@
+{
+  "id": "033-star_100-drop_head_variable",
+  "suite": "star",
+  "query": "star_100",
+  "operator": "drop_head_variable",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

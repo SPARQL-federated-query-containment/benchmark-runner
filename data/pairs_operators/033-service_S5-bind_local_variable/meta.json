@@ -1,0 +1,14 @@
+{
+  "id": "033-service_S5-bind_local_variable",
+  "suite": "operators",
+  "query": "service_S5",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

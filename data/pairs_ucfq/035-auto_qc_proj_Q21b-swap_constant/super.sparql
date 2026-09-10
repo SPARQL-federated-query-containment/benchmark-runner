@@ -1,0 +1,92 @@
+SELECT ?name ?email WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/other> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/other> .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?name .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?name .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#email> ?email .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#email> ?email .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?c1 .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?c1 .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?c1 <http://www.lehigh.edu//univ-bench.owl#shortName> "Course10"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?c1 <http://www.lehigh.edu//univ-bench.owl#shortName> "Course10"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?c2 .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?c2 .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?c2 <http://www.lehigh.edu//univ-bench.owl#shortName> "Course20"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?c2 <http://www.lehigh.edu//univ-bench.owl#shortName> "Course20"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?c .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?c .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?c <http://www.lehigh.edu//univ-bench.owl#shortName> "Course30"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?c <http://www.lehigh.edu//univ-bench.owl#shortName> "Course30"^^<http://www.w3.org/2001/XMLSchema#string> .
+    }
+  }
+}

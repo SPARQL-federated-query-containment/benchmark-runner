@@ -1,0 +1,26 @@
+{
+  "id": "014-ucfq_2-rename_member",
+  "suite": "ucfq",
+  "query": "ucfq_2",
+  "operator": "rename_member",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/benchmark/m1",
+      "http://example.org/benchmark/m2",
+      "http://example.org/benchmark/m3",
+      "http://example.org/benchmark/renamed"
+    ]
+  },
+  "super": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/benchmark/m0",
+      "http://example.org/benchmark/m1",
+      "http://example.org/benchmark/m2",
+      "http://example.org/benchmark/m3"
+    ]
+  }
+}

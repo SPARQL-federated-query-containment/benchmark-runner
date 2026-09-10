@@ -1,0 +1,22 @@
+{
+  "id": "046-auto_qc_nop_Q1a-assign_federation",
+  "suite": "operators",
+  "query": "auto_qc_nop_Q1a",
+  "operator": "assign_federation",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/a",
+      "http://example.org/b"
+    ]
+  },
+  "super": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/a",
+      "http://example.org/b"
+    ]
+  }
+}

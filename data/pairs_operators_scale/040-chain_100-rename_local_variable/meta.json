@@ -1,0 +1,14 @@
+{
+  "id": "040-chain_100-rename_local_variable",
+  "suite": "operators",
+  "query": "chain_100",
+  "operator": "rename_local_variable",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "054-star_1000-add_shared_variable_clause_to_sub",
+  "suite": "star",
+  "query": "star_1000",
+  "operator": "add_shared_variable_clause_to_sub",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

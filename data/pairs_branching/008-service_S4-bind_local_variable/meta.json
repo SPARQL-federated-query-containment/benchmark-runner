@@ -1,0 +1,14 @@
+{
+  "id": "008-service_S4-bind_local_variable",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

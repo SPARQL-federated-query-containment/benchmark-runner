@@ -1,0 +1,14 @@
+{
+  "id": "032-service_S5-rename_local_variable",
+  "suite": "operators",
+  "query": "service_S5",
+  "operator": "rename_local_variable",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

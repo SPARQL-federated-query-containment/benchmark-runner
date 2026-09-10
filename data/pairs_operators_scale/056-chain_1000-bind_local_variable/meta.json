@@ -1,0 +1,14 @@
+{
+  "id": "056-chain_1000-bind_local_variable",
+  "suite": "operators",
+  "query": "chain_1000",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

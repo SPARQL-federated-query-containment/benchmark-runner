@@ -1,0 +1,14 @@
+{
+  "id": "048-star_100-swap_constant",
+  "suite": "star",
+  "query": "star_100",
+  "operator": "swap_constant",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

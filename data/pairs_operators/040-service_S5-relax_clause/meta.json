@@ -1,0 +1,14 @@
+{
+  "id": "040-service_S5-relax_clause",
+  "suite": "operators",
+  "query": "service_S5",
+  "operator": "relax_clause",
+  "side": "super",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

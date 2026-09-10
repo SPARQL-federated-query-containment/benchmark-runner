@@ -1,0 +1,34 @@
+SELECT ?v0 ?end WHERE {
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#p0> ?end .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#p1> ?v1 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#p2> ?v2 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#p3> ?v3 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#p4> ?v4 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#p5> ?v5 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#p6> ?v6 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#p7> ?v7 .
+  }
+  SERVICE <http://example.org/a> {
+    ?v0 <http://example.org/benchmark#p8> ?v8 .
+  }
+  SERVICE <http://example.org/b> {
+    ?v0 <http://example.org/benchmark#p9> ?v9 .
+    ?v0 <http://example.org/benchmark#tail> ?w .
+    ?v0 <http://example.org/benchmark#added> ?added .
+  }
+}

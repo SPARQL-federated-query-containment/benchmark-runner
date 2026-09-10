@@ -1,0 +1,11 @@
+SELECT ?actor ?news WHERE {
+  SERVICE <http://newyork-times.system.ip.address:8897/sparql> {
+    ?y <http://data.nytimes.com/elements/topicPage> ?news .
+    ?y <http://www.w3.org/2002/07/owl#sameAs> ?x .
+  }
+  SERVICE <http://linked-mdb.system.ip.address:8896/sparql> {
+    ?actor <http://www.w3.org/2002/07/owl#sameAs> ?x .
+    ?film <http://data.linkedmdb.org/resource/movie/actor> ?actor .
+    ?film <http://purl.org/dc/terms/title> "Tarzan"^^<http://www.w3.org/2001/XMLSchema#string> .
+  }
+}

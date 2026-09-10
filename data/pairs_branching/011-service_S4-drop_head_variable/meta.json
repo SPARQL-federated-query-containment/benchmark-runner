@@ -1,0 +1,14 @@
+{
+  "id": "011-service_S4-drop_head_variable",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "drop_head_variable",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

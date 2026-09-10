@@ -1,0 +1,14 @@
+{
+  "id": "013-service_S4-swap_constant",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "swap_constant",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

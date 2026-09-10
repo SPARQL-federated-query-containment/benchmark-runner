@@ -1,0 +1,14 @@
+{
+  "id": "007-chain_10-drop_head_variable",
+  "suite": "operators",
+  "query": "chain_10",
+  "operator": "drop_head_variable",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

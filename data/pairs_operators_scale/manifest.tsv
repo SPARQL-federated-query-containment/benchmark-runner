@@ -1,0 +1,76 @@
+id	query	operator	side	expected	sub_semantics	super_semantics	sub_federation	super_federation
+001-chain_10-add_fresh_variable_clause_at_contacted_member_to_sub	chain_10	add_fresh_variable_clause_at_contacted_member_to_sub	sub	not contained	bag-set	bag-set		
+002-chain_10-add_fresh_variable_clause_at_new_member_to_sub	chain_10	add_fresh_variable_clause_at_new_member_to_sub	sub	not contained	bag-set	bag-set		
+003-chain_10-add_member_to_super	chain_10	add_member_to_super	super	not contained	bag-set	bag-set		
+004-chain_10-add_shared_variable_clause_to_sub	chain_10	add_shared_variable_clause_to_sub	sub	contained	bag-set	bag-set		
+005-chain_local_10-assign_federation	chain_local_10	assign_federation	both	contained	bag	bag	http://example.org/a http://example.org/b	http://example.org/a http://example.org/b
+006-chain_10-bind_local_variable	chain_10	bind_local_variable	sub	contained	bag-set	bag-set		
+007-chain_10-drop_head_variable	chain_10	drop_head_variable	sub	not contained	bag-set	bag-set		
+008-chain_10-drop_head_variable	chain_10	drop_head_variable	super	not contained	bag-set	bag-set		
+009-chain_10-drop_head_variable	chain_10	drop_head_variable	both	contained	bag-set	bag-set		
+010-chain_10-drop_variable_from_super	chain_10	drop_variable_from_super	super	not contained	bag-set	bag-set		
+011-chain_10-identity	chain_10	identity	both	contained	bag-set	bag-set		
+012-chain_10-relax_clause	chain_10	relax_clause	sub	not contained	bag-set	bag-set		
+013-chain_10-relax_clause	chain_10	relax_clause	super	contained	bag-set	bag-set		
+014-chain_10-rename_local_variable	chain_10	rename_local_variable	sub	contained	bag-set	bag-set		
+015-chain_10-rename_local_variable	chain_10	rename_local_variable	super	contained	bag-set	bag-set		
+016-chain_10-rename_local_variable	chain_10	rename_local_variable	both	contained	bag-set	bag-set		
+017-chain_10-rename_member	chain_10	rename_member	sub	not contained	bag-set	bag-set		
+018-chain_10-rename_member	chain_10	rename_member	super	not contained	bag-set	bag-set		
+019-chain_10-reorder_body	chain_10	reorder_body	sub	contained	bag-set	bag-set		
+020-chain_10-reorder_body	chain_10	reorder_body	super	contained	bag-set	bag-set		
+021-chain_10-reorder_body	chain_10	reorder_body	both	contained	bag-set	bag-set		
+022-chain_10-swap_constant	chain_10	swap_constant	sub	not contained	bag-set	bag-set		
+023-chain_10-swap_constant	chain_10	swap_constant	super	not contained	bag-set	bag-set		
+024-chain_local_10-widen_virtual_member	chain_local_10	widen_virtual_member	sub	not contained	bag	bag	http://example.org/a http://example.org/b http://example.org/c	http://example.org/a http://example.org/b
+025-chain_local_10-widen_virtual_member	chain_local_10	widen_virtual_member	super	contained	bag	bag	http://example.org/a http://example.org/b	http://example.org/a http://example.org/b http://example.org/c
+026-chain_100-add_fresh_variable_clause_at_contacted_member_to_sub	chain_100	add_fresh_variable_clause_at_contacted_member_to_sub	sub	not contained	bag-set	bag-set		
+027-chain_100-add_fresh_variable_clause_at_new_member_to_sub	chain_100	add_fresh_variable_clause_at_new_member_to_sub	sub	not contained	bag-set	bag-set		
+028-chain_100-add_member_to_super	chain_100	add_member_to_super	super	not contained	bag-set	bag-set		
+029-chain_100-add_shared_variable_clause_to_sub	chain_100	add_shared_variable_clause_to_sub	sub	contained	bag-set	bag-set		
+030-chain_local_100-assign_federation	chain_local_100	assign_federation	both	contained	bag	bag	http://example.org/a http://example.org/b	http://example.org/a http://example.org/b
+031-chain_100-bind_local_variable	chain_100	bind_local_variable	sub	contained	bag-set	bag-set		
+032-chain_100-drop_head_variable	chain_100	drop_head_variable	sub	not contained	bag-set	bag-set		
+033-chain_100-drop_head_variable	chain_100	drop_head_variable	super	not contained	bag-set	bag-set		
+034-chain_100-drop_head_variable	chain_100	drop_head_variable	both	contained	bag-set	bag-set		
+035-chain_100-drop_variable_from_super	chain_100	drop_variable_from_super	super	not contained	bag-set	bag-set		
+036-chain_100-identity	chain_100	identity	both	contained	bag-set	bag-set		
+037-chain_100-relax_clause	chain_100	relax_clause	sub	not contained	bag-set	bag-set		
+038-chain_100-relax_clause	chain_100	relax_clause	super	contained	bag-set	bag-set		
+039-chain_100-rename_local_variable	chain_100	rename_local_variable	sub	contained	bag-set	bag-set		
+040-chain_100-rename_local_variable	chain_100	rename_local_variable	super	contained	bag-set	bag-set		
+041-chain_100-rename_local_variable	chain_100	rename_local_variable	both	contained	bag-set	bag-set		
+042-chain_100-rename_member	chain_100	rename_member	sub	not contained	bag-set	bag-set		
+043-chain_100-rename_member	chain_100	rename_member	super	not contained	bag-set	bag-set		
+044-chain_100-reorder_body	chain_100	reorder_body	sub	contained	bag-set	bag-set		
+045-chain_100-reorder_body	chain_100	reorder_body	super	contained	bag-set	bag-set		
+046-chain_100-reorder_body	chain_100	reorder_body	both	contained	bag-set	bag-set		
+047-chain_100-swap_constant	chain_100	swap_constant	sub	not contained	bag-set	bag-set		
+048-chain_100-swap_constant	chain_100	swap_constant	super	not contained	bag-set	bag-set		
+049-chain_local_100-widen_virtual_member	chain_local_100	widen_virtual_member	sub	not contained	bag	bag	http://example.org/a http://example.org/b http://example.org/c	http://example.org/a http://example.org/b
+050-chain_local_100-widen_virtual_member	chain_local_100	widen_virtual_member	super	contained	bag	bag	http://example.org/a http://example.org/b	http://example.org/a http://example.org/b http://example.org/c
+051-chain_1000-add_fresh_variable_clause_at_contacted_member_to_sub	chain_1000	add_fresh_variable_clause_at_contacted_member_to_sub	sub	not contained	bag-set	bag-set		
+052-chain_1000-add_fresh_variable_clause_at_new_member_to_sub	chain_1000	add_fresh_variable_clause_at_new_member_to_sub	sub	not contained	bag-set	bag-set		
+053-chain_1000-add_member_to_super	chain_1000	add_member_to_super	super	not contained	bag-set	bag-set		
+054-chain_1000-add_shared_variable_clause_to_sub	chain_1000	add_shared_variable_clause_to_sub	sub	contained	bag-set	bag-set		
+055-chain_local_1000-assign_federation	chain_local_1000	assign_federation	both	contained	bag	bag	http://example.org/a http://example.org/b	http://example.org/a http://example.org/b
+056-chain_1000-bind_local_variable	chain_1000	bind_local_variable	sub	contained	bag-set	bag-set		
+057-chain_1000-drop_head_variable	chain_1000	drop_head_variable	sub	not contained	bag-set	bag-set		
+058-chain_1000-drop_head_variable	chain_1000	drop_head_variable	super	not contained	bag-set	bag-set		
+059-chain_1000-drop_head_variable	chain_1000	drop_head_variable	both	contained	bag-set	bag-set		
+060-chain_1000-drop_variable_from_super	chain_1000	drop_variable_from_super	super	not contained	bag-set	bag-set		
+061-chain_1000-identity	chain_1000	identity	both	contained	bag-set	bag-set		
+062-chain_1000-relax_clause	chain_1000	relax_clause	sub	not contained	bag-set	bag-set		
+063-chain_1000-relax_clause	chain_1000	relax_clause	super	contained	bag-set	bag-set		
+064-chain_1000-rename_local_variable	chain_1000	rename_local_variable	sub	contained	bag-set	bag-set		
+065-chain_1000-rename_local_variable	chain_1000	rename_local_variable	super	contained	bag-set	bag-set		
+066-chain_1000-rename_local_variable	chain_1000	rename_local_variable	both	contained	bag-set	bag-set		
+067-chain_1000-rename_member	chain_1000	rename_member	sub	not contained	bag-set	bag-set		
+068-chain_1000-rename_member	chain_1000	rename_member	super	not contained	bag-set	bag-set		
+069-chain_1000-reorder_body	chain_1000	reorder_body	sub	contained	bag-set	bag-set		
+070-chain_1000-reorder_body	chain_1000	reorder_body	super	contained	bag-set	bag-set		
+071-chain_1000-reorder_body	chain_1000	reorder_body	both	contained	bag-set	bag-set		
+072-chain_1000-swap_constant	chain_1000	swap_constant	sub	not contained	bag-set	bag-set		
+073-chain_1000-swap_constant	chain_1000	swap_constant	super	not contained	bag-set	bag-set		
+074-chain_local_1000-widen_virtual_member	chain_local_1000	widen_virtual_member	sub	not contained	bag	bag	http://example.org/a http://example.org/b http://example.org/c	http://example.org/a http://example.org/b
+075-chain_local_1000-widen_virtual_member	chain_local_1000	widen_virtual_member	super	contained	bag	bag	http://example.org/a http://example.org/b	http://example.org/a http://example.org/b http://example.org/c

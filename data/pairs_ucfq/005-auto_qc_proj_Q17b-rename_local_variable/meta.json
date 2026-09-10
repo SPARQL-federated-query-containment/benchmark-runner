@@ -1,0 +1,26 @@
+{
+  "id": "005-auto_qc_proj_Q17b-rename_local_variable",
+  "suite": "ucfq",
+  "query": "auto_qc_proj_Q17b",
+  "operator": "rename_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/a",
+      "http://example.org/b",
+      "http://example.org/c",
+      "http://example.org/d"
+    ]
+  },
+  "super": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/a",
+      "http://example.org/b",
+      "http://example.org/c",
+      "http://example.org/d"
+    ]
+  }
+}

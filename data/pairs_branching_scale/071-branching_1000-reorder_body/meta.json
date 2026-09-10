@@ -1,0 +1,14 @@
+{
+  "id": "071-branching_1000-reorder_body",
+  "suite": "branching",
+  "query": "branching_1000",
+  "operator": "reorder_body",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

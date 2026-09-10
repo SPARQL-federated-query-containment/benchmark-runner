@@ -1,0 +1,14 @@
+{
+  "id": "031-branching_100-bind_local_variable",
+  "suite": "branching",
+  "query": "branching_100",
+  "operator": "bind_local_variable",
+  "side": "sub",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

@@ -1,0 +1,167 @@
+SELECT ?age ?course ?dept ?email ?sex ?ssn ?tel ?x ?y ?z WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.lehigh.edu//univ-bench.owl#Student> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.lehigh.edu//univ-bench.owl#Student> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.lehigh.edu//univ-bench.owl#Student> .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?y .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?y .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?y .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#nickName> ?z .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#nickName> ?z .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#nickName> ?z .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#telephone> ?tel .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#telephone> ?tel .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#telephone> ?tel .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#ssn> ?ssn .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#ssn> ?ssn .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#ssn> ?ssn .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#age> ?age .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#age> ?age .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#age> ?age .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#sex> ?sex .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#sex> ?sex .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#sex> ?sex .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#emailAddress> ?email .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#emailAddress> ?email .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#emailAddress> ?email .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#memberOf> ?dept .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#memberOf> ?dept .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#memberOf> ?dept .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?course .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?course .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?course .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#masterDegreeFrom> <http://www.lehigh.edu//univ-bench.owl#OklahomaUniversity> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#masterDegreeFrom> <http://www.lehigh.edu//univ-bench.owl#OklahomaUniversity> .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#masterDegreeFrom> <http://www.lehigh.edu//univ-bench.owl#OklahomaUniversity> .
+    }
+  }
+}

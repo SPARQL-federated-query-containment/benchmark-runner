@@ -1,0 +1,14 @@
+{
+  "id": "028-branching_100-add_member_to_super",
+  "suite": "branching",
+  "query": "branching_100",
+  "operator": "add_member_to_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

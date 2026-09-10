@@ -1,0 +1,14 @@
+{
+  "id": "011-service_S2-identity",
+  "suite": "operators",
+  "query": "service_S2",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

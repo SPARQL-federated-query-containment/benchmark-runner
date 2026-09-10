@@ -1,0 +1,112 @@
+SELECT ?x ?y ?z ?t ?s ?ag ?sx ?email ?dept ?course WHERE {
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?w1 .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?w1 .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?y .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#name> ?y .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#nickName> ?z .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#nickName> ?z .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#telephone> ?t .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#telephone> ?t .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#ssn> ?s .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#ssn> ?s .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#age> ?ag .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#age> ?ag .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#sex> ?sx .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#sex> ?sx .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#emailAddress> ?email .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#emailAddress> ?email .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#memberOf> ?dept .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#memberOf> ?dept .
+    }
+  }
+  {
+    SERVICE <http://example.org/c> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?course .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/d> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#takesCourse> ?course .
+    }
+  }
+  {
+    SERVICE <http://example.org/a> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#masterDegreeFrom> ?master .
+    }
+  }
+  UNION {
+    SERVICE <http://example.org/b> {
+      ?x <http://www.lehigh.edu//univ-bench.owl#masterDegreeFrom> ?master .
+    }
+  }
+}

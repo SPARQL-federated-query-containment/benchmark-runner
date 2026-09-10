@@ -1,0 +1,14 @@
+{
+  "id": "062-star_1000-relax_clause",
+  "suite": "star",
+  "query": "star_1000",
+  "operator": "relax_clause",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

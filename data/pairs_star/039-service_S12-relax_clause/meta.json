@@ -1,0 +1,14 @@
+{
+  "id": "039-service_S12-relax_clause",
+  "suite": "star",
+  "query": "service_S12",
+  "operator": "relax_clause",
+  "side": "sub",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "043-branching_100-rename_member",
+  "suite": "branching",
+  "query": "branching_100",
+  "operator": "rename_member",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

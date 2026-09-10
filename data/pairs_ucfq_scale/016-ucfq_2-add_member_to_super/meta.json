@@ -1,0 +1,27 @@
+{
+  "id": "016-ucfq_2-add_member_to_super",
+  "suite": "ucfq",
+  "query": "ucfq_2",
+  "operator": "add_member_to_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/benchmark/m0",
+      "http://example.org/benchmark/m1",
+      "http://example.org/benchmark/m2",
+      "http://example.org/benchmark/m3"
+    ]
+  },
+  "super": {
+    "semantics": "bag",
+    "federation": [
+      "http://example.org/benchmark/added",
+      "http://example.org/benchmark/m0",
+      "http://example.org/benchmark/m1",
+      "http://example.org/benchmark/m2",
+      "http://example.org/benchmark/m3"
+    ]
+  }
+}

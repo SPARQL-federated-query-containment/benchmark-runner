@@ -1,0 +1,14 @@
+{
+  "id": "050-auto_qc_proj_Q17b-drop_variable_from_super",
+  "suite": "operators",
+  "query": "auto_qc_proj_Q17b",
+  "operator": "drop_variable_from_super",
+  "side": "super",
+  "expected": "not contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}

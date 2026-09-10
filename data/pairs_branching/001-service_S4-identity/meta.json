@@ -1,0 +1,14 @@
+{
+  "id": "001-service_S4-identity",
+  "suite": "branching",
+  "query": "service_S4",
+  "operator": "identity",
+  "side": "both",
+  "expected": "contained",
+  "sub": {
+    "semantics": "bag-set"
+  },
+  "super": {
+    "semantics": "bag-set"
+  }
+}
