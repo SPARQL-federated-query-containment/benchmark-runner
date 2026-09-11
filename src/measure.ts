@@ -6,37 +6,85 @@ import {
   isError,
 } from "result-interface";
 import type { Pair, Verdict } from "./load";
-import type { Engine } from "./engines";
+import type { Decision, Engine, DecisionVerdict } from "./engines";
 import { mean, median } from "./stats";
 
-export type Outcome = "correct" | "incorrect" | "unknown" | "error";
+const SETTLE_DELAY_MS = 5000;
 
-export interface PairResult {
-  expected: Verdict;
-  verdict: Verdict | "unknown" | "error";
-  outcome: Outcome;
-  verdictStable?: false;
-  meanMs?: number;
-  medianMs?: number;
-  ms?: number[];
-  reason?: string;
+function timeoutAfter(ms: number): Promise<Result<Decision>> {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(result({ verdict: "timeout" })), ms);
+  });
 }
 
+export type Outcome =
+  | "correct"
+  | "incorrect"
+  | "unknown"
+  | "timeout"
+  | "set solver unknown"
+  | "out of memory"
+  | "error";
+
+export interface TimedResult {
+  expected: Verdict;
+  verdict: Exclude<DecisionVerdict, "timeout">;
+  outcome: Exclude<Outcome, "timeout" | "error">;
+  meanMs: number;
+  medianMs: number;
+  ms: number[];
+}
+
+export interface TimedOutResult {
+  expected: Verdict;
+  verdict: "timeout";
+  outcome: "timeout";
+}
+
+export interface ErroredResult {
+  expected: Verdict;
+  verdict: "error";
+  outcome: "error";
+  reason: string;
+}
+
+export type PairResult = TimedResult | TimedOutResult | ErroredResult;
+
 interface Accumulator {
-  verdicts: (Verdict | "unknown")[];
+  verdicts: DecisionVerdict[];
   ms: number[];
   reason?: string;
 }
 
+/** No point repeating a pair once it has errored, timed out, run out of
+ * memory, or already answered wrong — the same failure will recur. */
+function isSettled(acc: Accumulator, expected: Verdict): boolean {
+  if (acc.reason !== undefined) {
+    return true;
+  }
+
+  const last = acc.verdicts.at(-1);
+  if (last === undefined) {
+    return false;
+  }
+
+  if (last === "timeout" || last === "out of memory") {
+    return true;
+  }
+
+  return (last === "contained" || last === "not contained") && last !== expected;
+}
+
 function outcomeOf(
   expected: Verdict,
-  verdict: Verdict | "unknown" | "error",
-): Outcome {
-  if (verdict === "error") {
-    return "error";
-  }
-  if (verdict === "unknown") {
-    return "unknown";
+  verdict: Exclude<DecisionVerdict, "timeout">,
+): Exclude<Outcome, "timeout" | "error"> {
+  if (
+    verdict === "unknown" ||
+    verdict === "set solver unknown" ||
+    verdict === "out of memory"
+  ) {
+    return verdict;
   }
   return verdict === expected ? "correct" : "incorrect";
 }
@@ -52,7 +100,9 @@ function finalize(expected: Verdict, acc: Accumulator): Result<PairResult> {
   }
 
   const verdict = acc.verdicts[0]!;
-  const stable = acc.verdicts.every((value) => value === verdict);
+  if (verdict === "timeout") {
+    return result({ expected, verdict: "timeout", outcome: "timeout" });
+  }
 
   const meanMs = mean(acc.ms);
   if (isError(meanMs)) {
@@ -68,7 +118,6 @@ function finalize(expected: Verdict, acc: Accumulator): Result<PairResult> {
     expected,
     verdict,
     outcome: outcomeOf(expected, verdict),
-    ...(stable ? {} : { verdictStable: false as const }),
     meanMs: meanMs.value,
     medianMs: medianMs.value,
     ms: acc.ms,
@@ -89,6 +138,7 @@ export async function measure(
   engine: Engine,
   pairs: Pair[],
   repetitions: number,
+  timeoutMs?: number,
 ): SafePromise<Map<string, PairResult>> {
   const accumulators = new Map<string, Accumulator>(
     pairs.map((pair) => [pair.meta.id, { verdicts: [], ms: [] }]),
@@ -97,12 +147,15 @@ export async function measure(
   for (let pass = 0; pass < repetitions; pass += 1) {
     for (const pair of pairs) {
       const acc = accumulators.get(pair.meta.id)!;
-      if (acc.reason !== undefined) {
+      if (isSettled(acc, pair.meta.expected)) {
         continue;
       }
 
       const start = performance.now();
-      const decision = await engine.decide(pair);
+      const decision =
+        timeoutMs === undefined
+          ? await engine.decide(pair)
+          : await Promise.race([engine.decide(pair), timeoutAfter(timeoutMs)]);
       const elapsed = performance.now() - start;
 
       if (isError(decision)) {
@@ -111,7 +164,13 @@ export async function measure(
       }
 
       acc.verdicts.push(decision.value.verdict);
-      acc.ms.push(elapsed);
+      if (decision.value.verdict !== "timeout") {
+        acc.ms.push(elapsed);
+      }
+    }
+
+    if (pass < repetitions - 1) {
+      await Bun.sleep(SETTLE_DELAY_MS);
     }
   }
 

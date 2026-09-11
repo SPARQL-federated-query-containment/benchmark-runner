@@ -42,7 +42,19 @@ program
   )
   .option("--engine <engine>", "bfc | specs | both", "both")
   .option("--filter <regex>", "only pairs whose id matches")
-  .option("--out <dir>", "run directory (default results/<timestamp>)");
+  .option("--out <dir>", "run directory (default results/<timestamp>)")
+  .option(
+    "-t, --timeout <ms>",
+    "per-pair timeout, also piped to the SpeCS oracle as its z3 budget",
+    anInteger,
+    1_200_000,
+  )
+  .option(
+    "--memory <mb>",
+    "z3 virtual memory limit inside the SpeCS oracle",
+    anInteger,
+    4096,
+  );
 
 program.parse();
 
@@ -53,6 +65,8 @@ const options = program.opts<{
   engine: string;
   filter?: string;
   out?: string;
+  timeout: number;
+  memory: number;
 }>();
 
 const suiteNames = resolveSuites(options.suite);
@@ -89,7 +103,12 @@ for (const name of suiteNames) {
   loaded.push({ name, pairs: kept });
 }
 
-const started = await startEngines(engineNames);
+const started = await startEngines(
+  engineNames,
+  "specs",
+  Math.ceil(options.timeout / 1000),
+  options.memory,
+);
 if (isError(started)) {
   console.error(started.error.message);
   process.exit(1);
@@ -110,7 +129,12 @@ let failed = false;
 for (const suite of loaded) {
   for (const engine of engines) {
     const startedAt = new Date().toISOString();
-    const results = await measure(engine, suite.pairs, options.repetitions);
+    const results = await measure(
+      engine,
+      suite.pairs,
+      options.repetitions,
+      options.timeout,
+    );
     const finishedAt = new Date().toISOString();
 
     if (isError(results)) {
@@ -139,7 +163,9 @@ for (const suite of loaded) {
       rows.filter((row) => row.outcome === outcome).length;
     console.log(
       `${path}  ${count("correct")}/${rows.length} correct` +
-        `  ${count("incorrect")} incorrect  ${count("unknown")} unknown  ${count("error")} error`,
+        `  ${count("incorrect")} incorrect  ${count("unknown")} unknown` +
+        `  ${count("timeout")} timeout  ${count("set solver unknown")} solver unknown` +
+        `  ${count("out of memory")} out of memory  ${count("error")} error`,
     );
   }
 }

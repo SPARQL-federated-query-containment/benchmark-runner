@@ -15,8 +15,15 @@ import type { Pair, Verdict } from "./load";
 
 export type EngineName = "bfc" | "specs";
 
+export type DecisionVerdict =
+  | Verdict
+  | "unknown"
+  | "timeout"
+  | "set solver unknown"
+  | "out of memory";
+
 export interface Decision {
-  verdict: Verdict | "unknown";
+  verdict: DecisionVerdict;
 }
 
 export interface Engine {
@@ -101,9 +108,7 @@ function specsEngine(solver: SetSolver): Engine {
         return contained;
       }
 
-      return result({
-        verdict: contained.value ? "contained" : "not contained",
-      });
+      return result({ verdict: contained.value });
     },
   };
 }
@@ -111,8 +116,10 @@ function specsEngine(solver: SetSolver): Engine {
 export async function startEngines(
   names: EngineName[],
   image = "specs",
+  z3TimeoutSeconds?: number,
+  z3MemoryMb?: number,
 ): SafePromise<{ engines: Engine[]; close: () => Promise<void> }> {
-  const started = await startSpecs(image);
+  const started = await startSpecs(image, z3TimeoutSeconds, z3MemoryMb);
   if (isError(started)) {
     return started;
   }

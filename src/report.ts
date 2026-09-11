@@ -62,6 +62,9 @@ interface Summary extends Partial<Aggregate> {
   correct: number;
   incorrect: Bucket;
   unknown: Bucket;
+  timeout: Bucket;
+  solverUnknown: Bucket;
+  outOfMemory: Bucket;
   error: Bucket;
   bySize?: Record<string, Partial<Aggregate>>;
 }
@@ -94,6 +97,9 @@ function aggregate(samples: number[]): Partial<Aggregate> {
 function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
   const incorrect: Bucket = { count: 0, ids: [] };
   const unknown: Bucket = { count: 0, ids: [] };
+  const timeout: Bucket = { count: 0, ids: [] };
+  const solverUnknown: Bucket = { count: 0, ids: [] };
+  const outOfMemory: Bucket = { count: 0, ids: [] };
   const failed: Bucket = { count: 0, ids: [] };
   let correct = 0;
 
@@ -104,19 +110,37 @@ function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
     const entry = results.get(pair.meta.id)!;
     const id = pair.meta.id;
 
-    if (entry.outcome === "correct") correct += 1;
-    else if (entry.outcome === "incorrect") {
-      incorrect.count += 1;
-      incorrect.ids.push(id);
-    } else if (entry.outcome === "unknown") {
-      unknown.count += 1;
-      unknown.ids.push(id);
-    } else {
-      failed.count += 1;
-      failed.ids.push(id);
+    switch (entry.outcome) {
+      case "correct":
+        correct += 1;
+        break;
+      case "incorrect":
+        incorrect.count += 1;
+        incorrect.ids.push(id);
+        break;
+      case "unknown":
+        unknown.count += 1;
+        unknown.ids.push(id);
+        break;
+      case "timeout":
+        timeout.count += 1;
+        timeout.ids.push(id);
+        break;
+      case "set solver unknown":
+        solverUnknown.count += 1;
+        solverUnknown.ids.push(id);
+        break;
+      case "out of memory":
+        outOfMemory.count += 1;
+        outOfMemory.ids.push(id);
+        break;
+      case "error":
+        failed.count += 1;
+        failed.ids.push(id);
+        break;
     }
 
-    if (entry.ms !== undefined) {
+    if (entry.outcome !== "timeout" && entry.outcome !== "error") {
       all.push(...entry.ms);
       if (pair.size !== undefined) {
         const samples = bySize.get(pair.size) ?? [];
@@ -132,6 +156,9 @@ function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
     correct,
     incorrect,
     unknown,
+    timeout,
+    solverUnknown,
+    outOfMemory,
     error: failed,
   };
 
