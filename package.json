@@ -7,7 +7,7 @@
   "scripts": {
     "image": "docker build -t specs solver/specs",
     "bench": "bun src/run.ts",
-    "smoke": "bun src/run.ts -r 1",
+    "smoke": "bun src/run.ts -r 2",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },
