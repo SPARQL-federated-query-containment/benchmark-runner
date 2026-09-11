@@ -152,6 +152,8 @@ for (const suite of loaded) {
         finishedAt,
         repetitions: options.repetitions,
         warmup: options.warmup,
+        timeoutMs: options.timeout,
+        memoryMb: options.memory,
         env,
       },
       suite.pairs,

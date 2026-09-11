@@ -62,8 +62,9 @@ before the next one is timed.
 
 `results/<timestamp>/<engine>.<suite>.json`, one per engine × suite (e.g.
 `bfc.star.json`, `specs.ucfq-scale.json`). Each carries its `meta` (environment,
-repetitions), a `summary` (`meanMs` / `medianMs`, outcome counts with the
-offending ids, `bySize` for the scale suites), and a `results` map keyed by pair
+repetitions, the `timeoutMs`/`memoryMb` the run used), a `summary` (`meanMs` /
+`medianMs`, outcome counts with the offending ids, `bySize` for the scale
+suites), and a `results` map keyed by pair
 id:
 
 ```json

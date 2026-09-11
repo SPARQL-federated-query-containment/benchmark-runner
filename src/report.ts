@@ -76,6 +76,8 @@ export interface RunContext {
   finishedAt: string;
   repetitions: number;
   warmup: number;
+  timeoutMs: number;
+  memoryMb: number;
   env: Env;
 }
 
