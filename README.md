@@ -39,13 +39,24 @@ bun run bench -- --filter '025|024'       # a subset by pair id
 | `--engine <bfc\|specs\|both>` | `both` | see below |
 | `--filter <regex>` | – | only pairs whose id matches |
 | `--out <dir>` | `results/<timestamp>` | where the JSON files land |
+| `-t, --timeout <ms>` | `1200000` (20 min) | per-pair budget; also piped to the SpeCS oracle as its z3 timeout, so the two stay in sync (LargeRDFBench's own convention for simple/complex queries) |
+| `--memory <mb>` | `4096` | z3 virtual memory limit inside the SpeCS oracle |
+
+A pair stops repeating as soon as one repetition errors, times out, runs out
+of memory, or answers wrong — the same failure will recur, and a single one
+is already enough to mark the pair against the engine. A 5s pause separates
+repetitions otherwise, so a heavy repetition's memory has time to be freed
+before the next one is timed.
 
 ## Engines
 
 - **`bfc`** — the staged federated bag-set containment procedure (`solver`), which
-  returns `contained` / `not contained` / `unknown`.
+  returns `contained` / `not contained` / `unknown`, or the oracle's own
+  `timeout` / `set solver unknown` / `out of memory` when it has to consult
+  SpeCS and SpeCS can't reach a verdict.
 - **`specs`** — the bare SpeCS set-containment oracle on the same pairs, as a
-  baseline. Two-valued; wrong wherever set and bag-set containment differ.
+  baseline. Two-valued when it answers at all; wrong wherever set and bag-set
+  containment differ.
 
 ## Output
 
@@ -66,5 +77,23 @@ id:
 }
 ```
 
-`outcome` is `correct` · `incorrect` (a wrong definite verdict) · `unknown` (the
-procedure declined, a valid answer on the open fragment) · `error`.
+`outcome` is `correct` · `incorrect` (a wrong definite verdict) · `unknown`
+(the procedure declined, a valid answer on the open fragment) · `timeout` (the
+z3 oracle hit its budget) · `set solver unknown` (z3 itself answered
+inconclusive, not from running out of time) · `out of memory` (z3 hit its
+memory limit) · `error` (an infrastructure failure, e.g. the container dying).
+
+Only `timeout` carries no timing — it stopped because of the imposed budget,
+not because a run actually finished, so `meanMs`/`medianMs`/`ms` are absent:
+
+```json
+"063-star_1000-relax_clause": {
+  "expected": "contained",
+  "verdict": "timeout",
+  "outcome": "timeout"
+}
+```
+
+Every other outcome, `set solver unknown` and `out of memory` included, keeps
+its timing — those represent a real completed run, just an inconclusive or
+resource-exhausted one.
