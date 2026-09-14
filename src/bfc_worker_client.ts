@@ -1,7 +1,22 @@
 import { type SafePromise, result, error } from "result-interface";
+import { SPECS_IMAGE } from "solver/lib/specs";
 import type { ContainmentResult } from "solver/lib/containment_solver";
 import type { Pair } from "./load";
 import type { Decision, Engine, EngineName } from "./engines";
+
+async function ensureSpecsContainerAbsent(): Promise<void> {
+  const existing = await Bun.$`docker ps -a --filter name=${SPECS_IMAGE} --format {{.Names}}`
+    .nothrow()
+    .quiet();
+  if (existing.stdout.toString().trim().length === 0) {
+    return;
+  }
+  const cleanup = Bun.spawn(["docker", "rm", "-f", SPECS_IMAGE], {
+    stdout: "ignore",
+    stderr: "ignore",
+  });
+  await cleanup.exited;
+}
 
 const CONTAINMENT_RESULTS = new Set<ContainmentResult>([
   "contained",
@@ -32,7 +47,8 @@ export function startWorkerEngine(
   const worker = new Worker(new URL("./bfc_worker.ts", import.meta.url).href);
   let nextRequestId = 0;
 
-  function decide(pair: Pair): SafePromise<Decision> {
+  async function decide(pair: Pair): SafePromise<Decision> {
+    await ensureSpecsContainerAbsent();
     const requestId = nextRequestId++;
 
     return new Promise((resolve) => {
