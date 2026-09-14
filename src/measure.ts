@@ -160,11 +160,15 @@ export async function measure(
   let results = new Map<string, PairResult>();
 
   for (let pass = 0; pass < repetitions; pass += 1) {
-    for (const pair of pairs) {
+    for (const [index, pair] of pairs.entries()) {
       const acc = accumulators.get(pair.meta.id)!;
       if (isSettled(acc, pair.meta.expected)) {
         continue;
       }
+
+      const label =
+        `${context.engine}/${context.suite}  pass ${pass + 1}/${repetitions}` +
+        `  pair ${index + 1}/${pairs.length}  ${pair.meta.id}`;
 
       const start = performance.now();
       const decision =
@@ -175,8 +179,11 @@ export async function measure(
 
       if (isError(decision)) {
         acc.reason = decision.error.message;
+        console.log(`${label}  error: ${decision.error.message}`);
         continue;
       }
+
+      console.log(`${label}  -> ${decision.value.verdict} (${elapsed.toFixed(0)}ms)`);
 
       acc.verdicts.push(decision.value.verdict);
       if (decision.value.verdict !== "timeout") {
@@ -204,7 +211,8 @@ export async function measure(
     const count = (outcome: string) =>
       rows.filter((entry) => entry.outcome === outcome).length;
 
-    row.status = pass === repetitions - 1 ? "done" : "running";
+    const done = pass === repetitions - 1;
+    row.status = done ? "done" : "running";
     row.pass = `${pass + 1}/${repetitions}`;
     row.total = rows.length;
     row.correct = count("correct");
@@ -213,7 +221,17 @@ export async function measure(
     row.timeout = count("timeout");
     row["out of memory"] = count("out of memory");
     row.error = count("error");
-    console.table([...overview.values()]);
+
+    if (done) {
+      console.table([...overview.values()]);
+    } else {
+      console.log(
+        `${context.engine}/${context.suite}  pass ${row.pass}  ` +
+          `${row.correct}/${row.total} correct  ${row.incorrect} incorrect` +
+          `  ${row.unknown} unknown  ${row.timeout} timeout` +
+          `  ${row["out of memory"]} out of memory  ${row.error} error`,
+      );
+    }
 
     if (pass < repetitions - 1) {
       await Bun.sleep(SETTLE_DELAY_MS);
