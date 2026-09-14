@@ -4,7 +4,7 @@ import { isError } from "result-interface";
 import { load, type Pair } from "./load";
 import { startEngines, type EngineName } from "./engines";
 import { measure, warmUp } from "./measure";
-import { captureEnv, writeReport } from "./report";
+import { captureEnv, reportPath } from "./report";
 
 const CORRECTNESS = ["operators", "star", "branching", "ucfq"];
 const SCALE = CORRECTNESS.map((suite) => `${suite}-scale`);
@@ -33,7 +33,18 @@ const anInteger = (value: string): number => {
 
 program
   .description("Run the federated query containment benchmark.")
-  .option("-r, --repetitions <n>", "timed repetitions per pair", anInteger, 1)
+  .option(
+    "--repetitions-correctness <n>",
+    "timed repetitions per pair, correctness suites",
+    anInteger,
+    20,
+  )
+  .option(
+    "--repetitions-scale <n>",
+    "timed repetitions per pair, scale suites",
+    anInteger,
+    20,
+  )
   .option("-w, --warmup <n>", "warmup rounds after the engine starts", anInteger, 0)
   .option(
     "--suite <suite>",
@@ -59,7 +70,8 @@ program
 program.parse();
 
 const options = program.opts<{
-  repetitions: number;
+  repetitionsCorrectness: number;
+  repetitionsScale: number;
   warmup: number;
   suite: string;
   engine: string;
@@ -105,7 +117,7 @@ for (const name of suiteNames) {
 
 const started = await startEngines(
   engineNames,
-  "specs",
+  options.timeout,
   Math.ceil(options.timeout / 1000),
   options.memory,
 );
@@ -127,15 +139,29 @@ const runDir =
 
 let failed = false;
 for (const suite of loaded) {
+  const repetitions = SCALE.includes(suite.name)
+    ? options.repetitionsScale
+    : options.repetitionsCorrectness;
+
   for (const engine of engines) {
     const startedAt = new Date().toISOString();
     const results = await measure(
       engine,
       suite.pairs,
-      options.repetitions,
+      repetitions,
       options.timeout,
+      runDir,
+      {
+        engine: engine.name,
+        suite: suite.name,
+        startedAt,
+        repetitions,
+        warmup: options.warmup,
+        timeoutMs: options.timeout,
+        memoryMb: options.memory,
+        env,
+      },
     );
-    const finishedAt = new Date().toISOString();
 
     if (isError(results)) {
       console.error(`${engine.name}/${suite.name}: ${results.error.message}`);
@@ -143,30 +169,14 @@ for (const suite of loaded) {
       continue;
     }
 
-    const path = await writeReport(
-      runDir,
-      {
-        engine: engine.name,
-        suite: suite.name,
-        startedAt,
-        finishedAt,
-        repetitions: options.repetitions,
-        warmup: options.warmup,
-        timeoutMs: options.timeout,
-        memoryMb: options.memory,
-        env,
-      },
-      suite.pairs,
-      results.value,
-    );
-
+    const path = reportPath(runDir, engine.name, suite.name);
     const rows = [...results.value.values()];
     const count = (outcome: string) =>
       rows.filter((row) => row.outcome === outcome).length;
     console.log(
       `${path}  ${count("correct")}/${rows.length} correct` +
         `  ${count("incorrect")} incorrect  ${count("unknown")} unknown` +
-        `  ${count("timeout")} timeout  ${count("set solver unknown")} solver unknown` +
+        `  ${count("timeout")} timeout` +
         `  ${count("out of memory")} out of memory  ${count("error")} error`,
     );
   }

@@ -23,17 +23,18 @@ bun run image                             # docker build -t specs solver/specs
 ## Running
 
 ```sh
-bun run smoke                             # both engines, all suites, 1 repetition
-bun run bench -- -r 10 -w 2               # 10 timed repetitions, 2 warmup rounds
-bun run bench -- --suite scale -r 5       # the four scaling twins only
-bun run bench -- --suite star             # one suite
-bun run bench -- --engine specs           # baseline only
-bun run bench -- --filter '025|024'       # a subset by pair id
+bun run smoke                                          # both engines, all suites, 2 repetitions
+bun run bench -- --repetitions-correctness 10 -w 2     # 10 timed repetitions on correctness suites, 2 warmup rounds
+bun run bench -- --suite scale --repetitions-scale 5   # the four scaling twins only
+bun run bench -- --suite star                          # one suite
+bun run bench -- --engine specs                        # baseline only
+bun run bench -- --filter '025|024'                    # a subset by pair id
 ```
 
 | flag | default | meaning |
 |---|---|---|
-| `-r, --repetitions <n>` | `1` | timed repetitions per pair |
+| `--repetitions-correctness <n>` | `20` | timed repetitions per pair, correctness suites |
+| `--repetitions-scale <n>` | `20` | timed repetitions per pair, scale suites |
 | `-w, --warmup <n>` | `0` | discarded rounds after the engine starts |
 | `--suite <suite>` | `all` | `operators` · `star` · `branching` · `ucfq` (append `-scale` for the twin), the groups `correctness` (the four base suites) and `scale` (the four twins), or `all` |
 | `--engine <bfc\|specs\|both>` | `both` | see below |

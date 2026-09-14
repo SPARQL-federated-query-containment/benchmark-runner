@@ -24,8 +24,8 @@ export interface PairMeta {
 
 export interface Pair {
   meta: PairMeta;
-  subText: string;
-  superText: string;
+  subQueryPath: string;
+  superQueryPath: string;
   size?: number;
 }
 
@@ -46,16 +46,13 @@ export async function load(directory: string): SafePromise<Pair[]> {
   }
 
   const index = (await indexFile.json()) as { pairs: PairMeta[] };
-  const pairs: Pair[] = [];
 
-  for (const meta of index.pairs) {
-    pairs.push({
-      meta,
-      subText: await Bun.file(join(directory, meta.files.sub)).text(),
-      superText: await Bun.file(join(directory, meta.files.super)).text(),
-      size: sizeOf(meta.query),
-    });
-  }
+  const pairs: Pair[] = index.pairs.map((meta) => ({
+    meta,
+    subQueryPath: join(directory, meta.files.sub),
+    superQueryPath: join(directory, meta.files.super),
+    size: sizeOf(meta.query),
+  }));
 
   return result(pairs);
 }

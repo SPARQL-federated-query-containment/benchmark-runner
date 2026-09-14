@@ -21,7 +21,7 @@ export interface Env {
 
 async function line(command: Promise<{ text(): string }>): Promise<string> {
   try {
-    return (await (await command).text()).trim();
+    return (await command).text().trim();
   } catch {
     return "unknown";
   }
@@ -63,7 +63,6 @@ interface Summary extends Partial<Aggregate> {
   incorrect: Bucket;
   unknown: Bucket;
   timeout: Bucket;
-  solverUnknown: Bucket;
   outOfMemory: Bucket;
   error: Bucket;
   bySize?: Record<string, Partial<Aggregate>>;
@@ -100,7 +99,6 @@ function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
   const incorrect: Bucket = { count: 0, ids: [] };
   const unknown: Bucket = { count: 0, ids: [] };
   const timeout: Bucket = { count: 0, ids: [] };
-  const solverUnknown: Bucket = { count: 0, ids: [] };
   const outOfMemory: Bucket = { count: 0, ids: [] };
   const failed: Bucket = { count: 0, ids: [] };
   let correct = 0;
@@ -127,10 +125,6 @@ function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
       case "timeout":
         timeout.count += 1;
         timeout.ids.push(id);
-        break;
-      case "set solver unknown":
-        solverUnknown.count += 1;
-        solverUnknown.ids.push(id);
         break;
       case "out of memory":
         outOfMemory.count += 1;
@@ -159,7 +153,6 @@ function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
     incorrect,
     unknown,
     timeout,
-    solverUnknown,
     outOfMemory,
     error: failed,
   };
@@ -173,6 +166,10 @@ function summarize(pairs: Pair[], results: Map<string, PairResult>): Summary {
   }
 
   return summary;
+}
+
+export function reportPath(outDir: string, engine: EngineName, suite: string): string {
+  return join(outDir, `${engine}.${suite}.json`);
 }
 
 export async function writeReport(
@@ -191,7 +188,7 @@ export async function writeReport(
     ),
   };
 
-  const path = join(outDir, `${context.engine}.${context.suite}.json`);
+  const path = reportPath(outDir, context.engine, context.suite);
   await Bun.write(path, JSON.stringify(file, null, 2) + "\n");
   return path;
 }

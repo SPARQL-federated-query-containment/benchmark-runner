@@ -6,8 +6,10 @@ import {
   isError,
 } from "result-interface";
 import type { Pair, Verdict } from "./load";
-import type { Decision, Engine, DecisionVerdict } from "./engines";
+import type { Decision, Engine } from "./engines";
+import type { ContainmentResult } from "solver/lib/containment_solver";
 import { mean, median } from "./stats";
+import { writeReport, type RunContext } from "./report";
 
 const SETTLE_DELAY_MS = 5000;
 
@@ -20,15 +22,12 @@ function timeoutAfter(ms: number): Promise<Result<Decision>> {
 export type Outcome =
   | "correct"
   | "incorrect"
-  | "unknown"
-  | "timeout"
-  | "set solver unknown"
-  | "out of memory"
-  | "error";
+  | "error"
+  | Exclude<ContainmentResult, "contained" | "not contained">;
 
 export interface TimedResult {
   expected: Verdict;
-  verdict: Exclude<DecisionVerdict, "timeout">;
+  verdict: Exclude<ContainmentResult, "timeout">;
   outcome: Exclude<Outcome, "timeout" | "error">;
   meanMs: number;
   medianMs: number;
@@ -51,7 +50,7 @@ export interface ErroredResult {
 export type PairResult = TimedResult | TimedOutResult | ErroredResult;
 
 interface Accumulator {
-  verdicts: DecisionVerdict[];
+  verdicts: ContainmentResult[];
   ms: number[];
   reason?: string;
 }
@@ -77,13 +76,9 @@ function isSettled(acc: Accumulator, expected: Verdict): boolean {
 
 function outcomeOf(
   expected: Verdict,
-  verdict: Exclude<DecisionVerdict, "timeout">,
+  verdict: Exclude<ContainmentResult, "timeout">,
 ): Exclude<Outcome, "timeout" | "error"> {
-  if (
-    verdict === "unknown" ||
-    verdict === "set solver unknown" ||
-    verdict === "out of memory"
-  ) {
+  if (verdict === "unknown" || verdict === "out of memory") {
     return verdict;
   }
   return verdict === expected ? "correct" : "incorrect";
@@ -138,11 +133,15 @@ export async function measure(
   engine: Engine,
   pairs: Pair[],
   repetitions: number,
-  timeoutMs?: number,
+  timeoutMs: number | undefined,
+  runDir: string,
+  context: Omit<RunContext, "finishedAt">,
 ): SafePromise<Map<string, PairResult>> {
   const accumulators = new Map<string, Accumulator>(
     pairs.map((pair) => [pair.meta.id, { verdicts: [], ms: [] }]),
   );
+
+  let results = new Map<string, PairResult>();
 
   for (let pass = 0; pass < repetitions; pass += 1) {
     for (const pair of pairs) {
@@ -169,21 +168,32 @@ export async function measure(
       }
     }
 
+    results = new Map<string, PairResult>();
+    for (const pair of pairs) {
+      const finalized = finalize(pair.meta.expected, accumulators.get(pair.meta.id)!);
+      if (isError(finalized)) {
+        return error(new Error(`${pair.meta.id}: ${finalized.error.message}`));
+      }
+      results.set(pair.meta.id, finalized.value);
+    }
+
+    await writeReport(
+      runDir,
+      { ...context, finishedAt: new Date().toISOString() },
+      pairs,
+      results,
+    );
+
+    const unsettled = pairs.filter(
+      (pair) => !isSettled(accumulators.get(pair.meta.id)!, pair.meta.expected),
+    ).length;
+    console.log(
+      `${context.engine}/${context.suite}  pass ${pass + 1}/${repetitions}  ${unsettled}/${pairs.length} still repeating`,
+    );
+
     if (pass < repetitions - 1) {
       await Bun.sleep(SETTLE_DELAY_MS);
     }
-  }
-
-  const results = new Map<string, PairResult>();
-  for (const pair of pairs) {
-    const finalized = finalize(
-      pair.meta.expected,
-      accumulators.get(pair.meta.id)!,
-    );
-    if (isError(finalized)) {
-      return error(new Error(`${pair.meta.id}: ${finalized.error.message}`));
-    }
-    results.set(pair.meta.id, finalized.value);
   }
 
   return result(results);
