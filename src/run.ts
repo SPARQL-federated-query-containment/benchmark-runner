@@ -145,7 +145,6 @@ for (const suite of loaded) {
       suite: suite.name,
       engine: engine.name,
       status: "pending",
-      pass: "",
       total: "",
       correct: "",
       incorrect: "",

@@ -53,7 +53,6 @@ export interface OverviewRow {
   suite: string;
   engine: string;
   status: "pending" | "running" | "done" | "failed";
-  pass: string;
   total: number | "";
   correct: number | "";
   incorrect: number | "";
@@ -167,8 +166,8 @@ export async function measure(
       }
 
       const label =
-        `${context.engine}/${context.suite}  pass ${pass + 1}/${repetitions}` +
-        `  pair ${index + 1}/${pairs.length}  ${pair.meta.id}`;
+        `${context.engine}/${context.suite}  reps ${pass + 1}/${repetitions}` +
+        `  scenario ${index + 1}/${pairs.length}  ${pair.meta.id}`;
 
       const start = performance.now();
       const decision =
@@ -213,7 +212,6 @@ export async function measure(
 
     const done = pass === repetitions - 1;
     row.status = done ? "done" : "running";
-    row.pass = `${pass + 1}/${repetitions}`;
     row.total = rows.length;
     row.correct = count("correct");
     row.incorrect = count("incorrect");
@@ -226,7 +224,7 @@ export async function measure(
       console.table([...overview.values()]);
     } else {
       console.log(
-        `${context.engine}/${context.suite}  pass ${row.pass}  ` +
+        `${context.engine}/${context.suite}  reps ${pass + 1}/${repetitions}  ` +
           `${row.correct}/${row.total} correct  ${row.incorrect} incorrect` +
           `  ${row.unknown} unknown  ${row.timeout} timeout` +
           `  ${row["out of memory"]} out of memory  ${row.error} error`,
