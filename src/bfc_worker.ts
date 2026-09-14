@@ -17,7 +17,7 @@ self.onmessage = async (event: MessageEvent<DecideMessage>) => {
   const { requestId, engine, pair, timeoutMs, z3TimeoutSeconds, z3MemoryMb } = event.data;
 
   const args = [
-    "bun",
+    process.execPath,
     "solver/index.ts",
     "--engine",
     engine,

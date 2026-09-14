@@ -3,8 +3,8 @@ import { program } from "commander";
 import { isError } from "result-interface";
 import { load, type Pair } from "./load";
 import { startEngines, type EngineName } from "./engines";
-import { measure, warmUp } from "./measure";
-import { captureEnv, reportPath } from "./report";
+import { measure, warmUp, type OverviewRow } from "./measure";
+import { captureEnv } from "./report";
 
 const CORRECTNESS = ["operators", "star", "branching", "ucfq"];
 const SCALE = CORRECTNESS.map((suite) => `${suite}-scale`);
@@ -136,6 +136,26 @@ const env = await captureEnv();
 const runDir =
   options.out ??
   join("results", new Date().toISOString().replace(/[:.]/g, "-"));
+console.log(`writing reports to ${runDir}`);
+
+const overview = new Map<string, OverviewRow>();
+for (const suite of loaded) {
+  for (const engine of engines) {
+    overview.set(`${engine.name}/${suite.name}`, {
+      suite: suite.name,
+      engine: engine.name,
+      status: "pending",
+      pass: "",
+      total: "",
+      correct: "",
+      incorrect: "",
+      unknown: "",
+      timeout: "",
+      "out of memory": "",
+      error: "",
+    });
+  }
+}
 
 let failed = false;
 for (const suite of loaded) {
@@ -144,6 +164,7 @@ for (const suite of loaded) {
     : options.repetitionsCorrectness;
 
   for (const engine of engines) {
+    const row = overview.get(`${engine.name}/${suite.name}`)!;
     const startedAt = new Date().toISOString();
     const results = await measure(
       engine,
@@ -161,24 +182,15 @@ for (const suite of loaded) {
         memoryMb: options.memory,
         env,
       },
+      overview,
     );
 
     if (isError(results)) {
       console.error(`${engine.name}/${suite.name}: ${results.error.message}`);
+      row.status = "failed";
       failed = true;
-      continue;
+      console.table([...overview.values()]);
     }
-
-    const path = reportPath(runDir, engine.name, suite.name);
-    const rows = [...results.value.values()];
-    const count = (outcome: string) =>
-      rows.filter((row) => row.outcome === outcome).length;
-    console.log(
-      `${path}  ${count("correct")}/${rows.length} correct` +
-        `  ${count("incorrect")} incorrect  ${count("unknown")} unknown` +
-        `  ${count("timeout")} timeout` +
-        `  ${count("out of memory")} out of memory  ${count("error")} error`,
-    );
   }
 }
 

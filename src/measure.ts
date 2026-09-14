@@ -49,6 +49,20 @@ export interface ErroredResult {
 
 export type PairResult = TimedResult | TimedOutResult | ErroredResult;
 
+export interface OverviewRow {
+  suite: string;
+  engine: string;
+  status: "pending" | "running" | "done" | "failed";
+  pass: string;
+  total: number | "";
+  correct: number | "";
+  incorrect: number | "";
+  unknown: number | "";
+  timeout: number | "";
+  "out of memory": number | "";
+  error: number | "";
+}
+
 interface Accumulator {
   verdicts: ContainmentResult[];
   ms: number[];
@@ -136,7 +150,9 @@ export async function measure(
   timeoutMs: number | undefined,
   runDir: string,
   context: Omit<RunContext, "finishedAt">,
+  overview: Map<string, OverviewRow>,
 ): SafePromise<Map<string, PairResult>> {
+  const row = overview.get(`${context.engine}/${context.suite}`)!;
   const accumulators = new Map<string, Accumulator>(
     pairs.map((pair) => [pair.meta.id, { verdicts: [], ms: [] }]),
   );
@@ -184,12 +200,20 @@ export async function measure(
       results,
     );
 
-    const unsettled = pairs.filter(
-      (pair) => !isSettled(accumulators.get(pair.meta.id)!, pair.meta.expected),
-    ).length;
-    console.log(
-      `${context.engine}/${context.suite}  pass ${pass + 1}/${repetitions}  ${unsettled}/${pairs.length} still repeating`,
-    );
+    const rows = [...results.values()];
+    const count = (outcome: string) =>
+      rows.filter((entry) => entry.outcome === outcome).length;
+
+    row.status = pass === repetitions - 1 ? "done" : "running";
+    row.pass = `${pass + 1}/${repetitions}`;
+    row.total = rows.length;
+    row.correct = count("correct");
+    row.incorrect = count("incorrect");
+    row.unknown = count("unknown");
+    row.timeout = count("timeout");
+    row["out of memory"] = count("out of memory");
+    row.error = count("error");
+    console.table([...overview.values()]);
 
     if (pass < repetitions - 1) {
       await Bun.sleep(SETTLE_DELAY_MS);
