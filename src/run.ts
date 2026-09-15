@@ -169,7 +169,6 @@ for (const suite of loaded) {
       engine,
       suite.pairs,
       repetitions,
-      options.timeout,
       runDir,
       {
         engine: engine.name,

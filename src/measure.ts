@@ -6,18 +6,13 @@ import {
   isError,
 } from "result-interface";
 import type { Pair, Verdict } from "./load";
-import type { Decision, Engine } from "./engines";
+import type { Engine } from "./engines";
 import type { ContainmentResult } from "solver/lib/containment_solver";
 import { mean, median } from "./stats";
 import { writeReport, type RunContext } from "./report";
 
 const SETTLE_DELAY_MS = 5000;
-
-function timeoutAfter(ms: number): Promise<Result<Decision>> {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(result({ verdict: "timeout" })), ms);
-  });
-}
+const TIMEOUT_SETTLE_DELAY_MS = 500;
 
 export type Outcome =
   | "correct"
@@ -62,7 +57,7 @@ export interface OverviewRow {
   error: number | "";
 }
 
-interface Accumulator {
+export interface Accumulator {
   verdicts: ContainmentResult[];
   ms: number[];
   reason?: string;
@@ -70,7 +65,7 @@ interface Accumulator {
 
 /** No point repeating a pair once it has errored, timed out, run out of
  * memory, or already answered wrong — the same failure will recur. */
-function isSettled(acc: Accumulator, expected: Verdict): boolean {
+export function isSettled(acc: Accumulator, expected: Verdict): boolean {
   if (acc.reason !== undefined) {
     return true;
   }
@@ -87,7 +82,7 @@ function isSettled(acc: Accumulator, expected: Verdict): boolean {
   return (last === "contained" || last === "not contained") && last !== expected;
 }
 
-function outcomeOf(
+export function outcomeOf(
   expected: Verdict,
   verdict: Exclude<ContainmentResult, "timeout">,
 ): Exclude<Outcome, "timeout" | "error"> {
@@ -97,7 +92,7 @@ function outcomeOf(
   return verdict === expected ? "correct" : "incorrect";
 }
 
-function finalize(expected: Verdict, acc: Accumulator): Result<PairResult> {
+export function finalize(expected: Verdict, acc: Accumulator): Result<PairResult> {
   if (acc.reason !== undefined) {
     return result({
       expected,
@@ -107,7 +102,11 @@ function finalize(expected: Verdict, acc: Accumulator): Result<PairResult> {
     });
   }
 
-  const verdict = acc.verdicts[0]!;
+  const verdict = acc.verdicts.at(-1);
+  if (verdict === undefined) {
+    return error(new Error("finalize called on a pair with no recorded verdict"));
+  }
+
   if (verdict === "timeout") {
     return result({ expected, verdict: "timeout", outcome: "timeout" });
   }
@@ -146,7 +145,6 @@ export async function measure(
   engine: Engine,
   pairs: Pair[],
   repetitions: number,
-  timeoutMs: number | undefined,
   runDir: string,
   context: Omit<RunContext, "finishedAt">,
   overview: Map<string, OverviewRow>,
@@ -170,10 +168,7 @@ export async function measure(
         `  scenario ${index + 1}/${pairs.length}  ${pair.meta.id}`;
 
       const start = performance.now();
-      const decision =
-        timeoutMs === undefined
-          ? await engine.decide(pair)
-          : await Promise.race([engine.decide(pair), timeoutAfter(timeoutMs)]);
+      const decision = await engine.decide(pair);
       const elapsed = performance.now() - start;
 
       if (isError(decision)) {
@@ -185,7 +180,9 @@ export async function measure(
       console.log(`${label}  -> ${decision.value.verdict} (${elapsed.toFixed(0)}ms)`);
 
       acc.verdicts.push(decision.value.verdict);
-      if (decision.value.verdict !== "timeout") {
+      if (decision.value.verdict === "timeout") {
+        await Bun.sleep(TIMEOUT_SETTLE_DELAY_MS);
+      } else {
         acc.ms.push(elapsed);
       }
     }
